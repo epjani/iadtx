@@ -1,0 +1,233 @@
+body
+{
+    padding:0px;
+    background-color:#2c2b2b;
+    color:#FFF;
+}
+a
+{
+    color:#FFFFFF;
+}
+a:hover
+{
+    color:#FFFFFF;
+    text-decoration:none;
+}
+a:focus
+{
+    outline:none;
+}
+form
+{
+    margin:0;
+}
+@media (min-width: 480px)
+{
+    #iadtx_page_container
+    {
+        padding:30px;
+        width:1344px;
+        margin:0 auto;
+    }
+    #content_container
+    {
+        width:1042px;
+        height:auto;
+        float:left;
+    }
+    #header_container
+    {
+        height:115px;
+    }
+    #content_placeholder
+    {
+        height:775px;
+    }
+    #right_panel_container
+    {
+        width:300px;
+        border:1px solid #000000;
+        float:left;
+        height:890px;
+    }
+
+    #iadtx_header_logo
+    {
+        width:325px;
+        float:left;
+    }
+    
+    #page_navigation
+    {
+        float:left;
+        width:413px;
+        padding-left:70px;
+        margin-top:20px;
+    }
+    #main_page_navigation li
+    {   
+        width:116px;
+        height:29px;
+        float:left;
+        text-align:center;
+        font-size:20px;
+        padding-top:9px;
+    }
+    #main_page_navigation li.selected
+    {
+        width:146px;
+        background: url("../images/page_nav_selected.png") no-repeat;
+    }
+    
+    #search_box
+    {
+        float:left;
+        margin-top:20px;
+    }
+    #iadtx_global_search
+    {
+        width:150px;
+        height:27px;
+        background:url('../images/search_frame.png') no-repeat;
+        border:none;
+        font-size:12px;
+        padding-left:15px;
+    }
+    #iadtx_global_search:focus
+    {
+        border:none;
+        box-shadow:none;
+    }
+    /* TODO make palceholder for IE8 - */
+    #iadtx_global_search::-webkit-input-placeholder
+    {
+        color:#b2b1b1;
+        font-size:9px;
+    }
+    #iadtx_global_search:-moz-placeholder  
+    {
+        color:#b2b1b1;
+        font-size:9px;
+    }
+    #iadtx_search_submit
+    {
+        margin-top:-6px;
+        margin-left:6px;
+        background:url('../images/search_ico.png') no-repeat;
+        width:26px;
+        height:24px;
+        border:none;
+    }
+    #advanced_search
+    {
+        background-color:#242424;
+        height:38px;
+        margin-top:15px;
+        font-family:Helvetica;
+        font-size:13px;
+        position:relative;
+    }
+    
+    #advanced_filter
+    {
+        width:128px;
+        height:28px;
+        text-align:center;
+        display:block;
+        padding-top:10px;
+        float:left;
+    }
+    #advanced_filter.selected
+    {
+        background:url('../images/advanced_filter_background.png') no-repeat;
+    }
+    #search_by_tags
+    {
+        float:left;
+        padding-top:10px;
+        margin-left:10px;
+        width:359px;
+    }
+    #search_by_tags_frm
+    {
+        width:150px;
+        height:17px;
+        background:url('../images/search_by_tags_frame.png') no-repeat;
+        border:none;
+        font-size:12px;
+        padding-left:15px;
+        float:left;
+        margin-top:-3px;
+        margin-left:10px;
+    }
+    #search_by_tags_frm:focus
+    {
+        border:none;
+        box-shadow:none;
+    }
+    #search_by_tags_submit
+    {
+        margin-top:-2px;
+        margin-left:6px;
+        background:url('../images/search_ico.png') no-repeat;
+        width:26px;
+        height:24px;
+        border:none;
+        float:left;
+    }
+    #advanced_filter_content
+    {
+        width:520px;
+        height:210px;
+        background-color:#2c2b2b;
+        position:absolute;
+        top:38px;
+        padding:45px 15px 15px 15px;
+        display:none;
+        border:1px solid #fff;
+    }
+    
+    .advanced_filter_pts
+    {
+        float:left;
+        width:135px;
+        height:auto;
+    }
+    .advanced_fiter_ddl
+    {
+        width:135px;
+    }
+    .arrow_up_large
+    {
+        width:65px;
+        height:32px;
+        background: url('../images/arrow_up_large.png') no-repeat;
+        margin: 0 auto;
+    }
+    .advanced_filter_tip_box
+    {
+        width:125px;
+        height:68px;
+        border:1px solid #6a8722;
+        margin:0 auto;
+        font-size:13px;
+        padding-left:3px;
+        line-height:17px;
+        padding-top:2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
