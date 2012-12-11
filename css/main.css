@@ -179,12 +179,11 @@ form
     {
         width:520px;
         height:210px;
-        background-color:#2c2b2b;
+        background-color:#242424;
         position:absolute;
         top:38px;
         padding:45px 15px 15px 15px;
         display:none;
-        border:1px solid #fff;
     }
     
     .advanced_filter_pts
@@ -193,7 +192,7 @@ form
         width:135px;
         height:auto;
     }
-    .advanced_fiter_ddl
+    .advanced_filter_ddl
     {
         width:135px;
     }
@@ -214,6 +213,40 @@ form
         padding-left:3px;
         line-height:17px;
         padding-top:2px;
+    }
+    
+    #select_field_wrapper, #select_degree_wrapper
+    {
+        margin-left:15px;
+    }
+    
+    #advanced_filter_search_btn
+    {
+        width:90px;
+        height:38px;
+        text-align:center;
+        border:1px solid #FFF;
+        position:relative;
+        top:27px;
+        float:right;
+        font-size:15px;
+        font-family:Helvetica;
+        background-color:#242424;
+        color:#FFFFFF;
+    }
+    
+    #advanced_search_submenu
+    {
+        color:#FFFFFF;
+        float:right;
+        font-family:Helvetica;
+        font-size:14px;
+        margin-top:8px;
+        margin-right:5px;
+    }
+    .advanced_submenu_item
+    {
+        padding:0px 10px 0px 5px;
     }
 }
 

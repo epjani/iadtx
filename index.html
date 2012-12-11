@@ -55,31 +55,56 @@
                             Advanced Filter
                             <img src="images/advanced_filter_arrow.png" />                           
                         </a>
-                        <!-- TODO make opacity for this div -->
                         <div id="advanced_filter_content">
-                            <div id="select_state_wrapper" class="advanced_filter_pts">
-                                <!-- TODO style drop down lists and make content for other three advanced filter dropdowns -->
-                                <select id="select_state" class="advanced_fiter_ddl">
-                                    <option value="0">Select a state</option>
-                                    <option id="state_1" value="1">State 1</option>
-                                    <option id="state_2" value="2">State 1</option>
-                                    <option id="state_3" value="3">State 1</option>
-                                    <option id="state_4" value="4">State 1</option>
-                                </select>
-                                <div id="select_state_tip">
-                                    <div class="arrow_up_large"></div>
-                                    <div class="advanced_filter_tip_box">
-                                        Pick the state which <br/ >
-                                        interest you. Who <br />
-                                        knows what you may <br />
-                                        stumble upon.
+                            <form action="">
+                                <div id="select_state_wrapper" class="advanced_filter_pts">
+                                    <!-- TODO style drop down lists and make content for other three advanced filter dropdowns -->
+                                    <select id="select_state" name="select_state" class="advanced_filter_ddl">
+                                        <option value="0">Select a state</option>
+                                        <option id="state_1" value="1">State 1</option>
+                                        <option id="state_2" value="2">State 1</option>
+                                        <option id="state_3" value="3">State 1</option>
+                                        <option id="state_4" value="4">State 1</option>
+                                    </select>
+                                    <div id="select_state_tip">
+                                        <div class="arrow_up_large"></div>
+                                        <div class="advanced_filter_tip_box">
+                                            Pick the state which <br/ >
+                                            interest you. Who <br />
+                                            knows what you may <br />
+                                            stumble upon.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="select_field_wrapper" class="advanced_filter_pts">
-                            </div>
-                            <div id="select_degree_wrapper" class="advanced_filter_pts">
-                            </div>
+                                <div id="select_field_wrapper" class="advanced_filter_pts">
+                                    <select id="select_field" name="select_field" class="advanced_filter_ddl">
+                                        <option value="0">Select a field of study</option>
+                                        <option id="fielf_1" value="1">Field 1</option>
+                                        <option id="fielf_2" value="2">Field 1</option>
+                                        <option id="fielf_3" value="3">Field 1</option>
+                                        <option id="fielf_4" value="4">Field 1</option>
+                                    </select>
+                                </div>
+                                <div id="select_degree_wrapper" class="advanced_filter_pts">
+                                    <select id="select_degree" name="select_degree" class="advanced_filter_ddl">
+                                        <option value="0">Select a state</option>
+                                        <option id="degree_1" value="1">Degree 1</option>
+                                        <option id="degree_2" value="2">Degree 1</option>
+                                        <option id="degree_3" value="3">Degree 1</option>
+                                        <option id="degree_4" value="4">Degree 1</option>
+                                    </select>
+                                    <div id="select_degree_tip">
+                                        <div class="arrow_up_large"></div>
+                                        <div class="advanced_filter_tip_box">
+                                            Select the desired<br />
+                                            degree level.<br />
+                                            (ie: Associates etc).
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <input type="submit" value="Search" id="advanced_filter_search_btn" />
+                            </form>
                         </div>
                         <div id="search_by_tags">
                             <div style="float:left;">Search by tags:</div>
@@ -87,6 +112,11 @@
                                 <input id="search_by_tags_frm" name="search_by_tags" type="text" />
                                 <input id="search_by_tags_submit" type="submit" value="" class="iadtx_search_ico"/>
                             </form>
+                        </div>
+                        <div id="advanced_search_submenu">
+                            <a href="#" title="News Feed" class="advanced_submenu_item">NewsFeed</a>|
+                            <a href="#" title="Manage Profile" class="advanced_submenu_item">Manage Profile</a>|
+                            <a href="#" title="Account Settings" class="advanced_submenu_item">Account Settings</a>
                         </div>
                     </div>
                     
