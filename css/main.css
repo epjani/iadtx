@@ -28,21 +28,22 @@ form
 }
 @media (min-width: 480px)
 {
+    /****************************PAGE LAYOUT***********************************/
     #iadtx_page_container
     {
-        padding:30px;
-        width:1371px;
-        margin:0 auto;
+        float: left;
+        width: 100%;
+    }
+    #padding-wrapper {
+        padding:30px 0px 0px 25px;
     }
     #content_container
     {
-        width:1042px;
-        height:auto;
-        float:left;
+        margin-right: 325px;
     }
     #header_container
     {
-        height:115px;
+        min-height:115px;
     }
     #content_placeholder
     {
@@ -50,12 +51,13 @@ form
     }
     #right_panel_container
     {
-        width:325px;
-        float:left;
-        height:890px;
-        margin-left:2px;
+        float: left;
+        width: 325px;
+        margin-left: -325px;
+        background-color:#fff;
+        height:400px;
     }
-
+    /****************************HEADER AND MENUS***********************************/
     #iadtx_header_logo
     {
         width:325px;
@@ -131,6 +133,7 @@ form
         font-family:Helvetica;
         font-size:13px;
         position:relative;
+        width:100%;
     }
     
     #advanced_filter
@@ -253,8 +256,7 @@ form
     {
         padding:0px 10px 0px 5px;
     }
-    
-    /* Specific content for "Explore" */
+    /****************************RHS PROFILE PANEL***********************************/
     #right_panel_label
     {
         font-size:60px;
@@ -280,8 +282,7 @@ form
         float:left;
         margin-left:10px;
     }
-    /*******************************/
-    
+    /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
 }
 
 
