@@ -1,10 +1,8 @@
 $(document).mouseup(function (e) {
     var container = $("#advanced_filter_content");
-    console.log(e.target.id);
     console.log(container.has(e.target));
-    console.log(container.has(e.target).length == 0);
-    console.log(e.target.id == 'advanced_filter');
-    if (container.has(e.target).length == 0 && e.target.id != 'advanced_filter' && e.target.id != 'advanced_filter_content') {
+    console.log($(e.target).parent().attr('id'));
+    if (container.has(e.target).length == 0 && e.target.id != 'advanced_filter' && e.target.id != 'advanced_filter_content' && $(e.target).parent().attr('id') != 'advanced_filter') {
         hide_advanded_filter();
     }
 });
