@@ -21,23 +21,28 @@ form
 {
     margin:0;
 }
+.font_green
+{
+    color:#6a8722;
+}
 @media (min-width: 480px)
 {
+    /****************************PAGE LAYOUT***********************************/
     #iadtx_page_container
     {
-        padding:30px;
-        width:1344px;
-        margin:0 auto;
+        float: left;
+        width: 100%;
+    }
+    #padding-wrapper {
+        padding:30px 0px 0px 25px;
     }
     #content_container
     {
-        width:1042px;
-        height:auto;
-        float:left;
+        margin-right: 325px;
     }
     #header_container
     {
-        height:115px;
+        min-height:115px;
     }
     #content_placeholder
     {
@@ -45,12 +50,13 @@ form
     }
     #right_panel_container
     {
-        width:300px;
-        border:1px solid #000000;
-        float:left;
-        height:890px;
+        float: left;
+        width: 325px; /*Width of right column in pixels*/
+        margin-left: -325px; /*Set left margin to -(RightColumnWidth) */
+        background-color:#fff;
+        height:400px;
     }
-
+    /****************************HEADER AND MENUS***********************************/
     #iadtx_header_logo
     {
         width:325px;
@@ -126,6 +132,7 @@ form
         font-family:Helvetica;
         font-size:13px;
         position:relative;
+        width:100%;
     }
     
     #advanced_filter
@@ -248,6 +255,33 @@ form
     {
         padding:0px 10px 0px 5px;
     }
+    /****************************RHS PROFILE PANEL***********************************/
+    #right_panel_label
+    {
+        font-size:60px;
+        padding-left:25px;
+        height:72px;
+        border-bottom:2px solid #FFF;
+        padding-top:7px;
+    }
+    #right_panel_content
+    {
+        border-left:2px solid #FFF;
+        height:100%;
+        padding:20px 0 0 25px;
+    }
+    #no_avatar_rightpanel
+    {
+        float:left;
+    }
+    #sign_up_label
+    {
+        font-family:Helvetica;
+        font-size:17px;
+        float:left;
+        margin-left:10px;
+    }
+    /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
 }
 
 
