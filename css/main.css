@@ -26,10 +26,12 @@ form
 {
     color:#6a8722;
 }
-
-@media (max-width: 1210px)
+.gray_button
 {
-    
+    background-color:#444444;
+    border:1px solid #3a3a3a;
+    text-align:center;
+    display:block;
 }
 @media (min-width: 480px)
 {
@@ -59,7 +61,7 @@ form
         float: left;
         width: 280px;
         margin-left: -280px;
-        background-color:#fff;
+        margin-top:26px;
         height:400px;
     }
     /****************************HEADER AND MENUS***********************************/
@@ -88,6 +90,10 @@ form
     {
         width:124px;
         background: url("../images/page_nav_selected.png") no-repeat;
+    }
+    #main_page_navigation li a:hover
+    {
+        color:#6a8722 !important;
     }
     
     #search_box
@@ -154,6 +160,10 @@ form
     #advanced_filter.selected
     {
         background:url('../images/advanced_filter_background.png') no-repeat;
+    }
+    #advanced_filter:hover
+    {
+        color:#6a8722 !important;
     }
     #search_by_tags
     {
@@ -259,6 +269,10 @@ form
         margin-top:11px;
         margin-right:5px;
     }
+    #advanced_search_submenu a:hover
+    {
+        color:#6a8722 !important;
+    }
     .advanced_submenu_item
     {
         padding:0px 10px 0px 5px;
@@ -267,16 +281,15 @@ form
     #right_panel_label
     {
         font-size:60px;
-        padding-left:25px;
+        padding-left:16px;
         height:72px;
         border-bottom:2px solid #FFF;
-        padding-top:7px;
     }
     #right_panel_content
     {
         border-left:2px solid #FFF;
         height:100%;
-        padding:20px 0 0 25px;
+        padding:15px 0 0 18px;
     }
     #no_avatar_rightpanel
     {
@@ -285,10 +298,22 @@ form
     #sign_up_label
     {
         font-family:Helvetica;
-        font-size:17px;
+        font-size:13px;
         float:left;
-        margin-left:10px;
+        margin-left:7px;
     }
+    .RHS_login_btn
+    {
+        width:56px;
+        height:18px;
+        float:left;
+        font-size:10px;
+        height:16px;
+        padding-top:2px;
+        margin-left:7px;
+        margin-top:25px;
+    }
+    
     /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
 }
 
