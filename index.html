@@ -40,27 +40,29 @@
         <div id="content_container">
             <div id="padding-wrapper">
                 <div id="header_container">
-                    <a id="iadtx_header_logo" href="#" title="IADTx network">
-                        <img src="images/iadtx_header_logo.png" alt="IADTx network" />
-                    </a>
-                    <div id="page_navigation">
-                        <ul id="main_page_navigation" class="unstyled">
-                            <li class="selected">
-                                <a href="#">Explorer</a>
-                            </li>
-                            <li>
-                                <a href="#">Profile</a>
-                            </li>
-                            <li>
-                                <a href="#">Magazine</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="search_box">
-                        <form action="search.html" id="iadtx_search">
-                            <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
-                            <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
-                        </form>
+                    <div class="row-fluid">
+                        <a id="iadtx_header_logo" href="#" title="IADTx network" >
+                            <img src="images/iadtx_header_logo.png" alt="IADTx network" />
+                        </a>
+                        <div id="page_navigation" class="span2">
+                            <ul id="main_page_navigation" class="unstyled">
+                                <li class="selected">
+                                    <a href="#">Explore</a>
+                                </li>
+                                <li>
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Magazine</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="search_box" class="span4">
+                            <form action="search.html" id="iadtx_search">
+                                <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
+                                <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
+                            </form>
+                        </div>
                     </div>
                     <div class="clearfix"></div>
                     <div id="advanced_search">
@@ -161,23 +163,25 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div id="right_panel_container">
         <!-- content specific for "Explore" -->
         <div id="right_panel_label" class="font_green">Explore</div>
         <div id="right_panel_content">
             <div id="signup_wrapper">
-                <img src="images/no_profile_avatar.jpg" alt="No prifile avatar" />
+                <img id="no_avatar_rightpanel" src="images/no_profile_avatar.jpg" alt="No prifile avatar" />
                 <div id="sign_up_label">
                     Sign Up & experience<br />
                     the IADTXnetwork
                 </div>
+                <a id="RHS_sign_up_btn" href="#" title="Sign Up" class="RHS_login_btn gray_button">Sign Up</a>
+                <a id="RHS_login_btn" href="#" title="Login" class="RHS_login_btn gray_button">Login</a>
             </div>
         </div>
     </div>
 
     <script src="js/vendor/bootstrap.min.js"></script>
+
 
     <script src="js/main.js"></script>
 </body>
