@@ -53,12 +53,15 @@ form
     }
     #header_container
     {
+        padding-top:30px;
+        padding-left:25px;
         min-height:115px;
     }
     #content_placeholder
     {
         height:715px;
         border-bottom:2px solid #FFF;
+        padding-left:25px;
     }
     #right_panel_container
     {
