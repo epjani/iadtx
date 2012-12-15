@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/plugins.css">
+    <link href="css/custom_modals.css" rel="stylesheet" type="text/css" />
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>
+    <script src="js/jquery.bpopup-0.7.0.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="iadtx_page_container">
@@ -233,7 +235,7 @@
                     Sign Up & experience<br />
                     the IADTXnetwork
                 </div>
-                <a id="RHS_sign_up_btn" href="#" title="Sign Up" class="RHS_login_btn gray_button">Sign Up</a>
+                <a id="RHS_sign_up_btn" href="#" title="Sign Up" class="RHS_login_btn gray_button" onclick="openModal('signup_modal');">Sign Up</a>
                 <a id="RHS_login_btn" href="#" title="Login" class="RHS_login_btn gray_button">Login</a>
             </div>
             <div class="clearfix"></div>
@@ -279,6 +281,16 @@
         </div>
     </div>
 
+
+    <!-- POPUPS -->
+    <div id="signup_modal">
+        <img src="images/iadtx_header_logo.png" class="iadtx_logo" />
+        <div class="clearfix"></div>
+        <div class="modal_signin_labels">
+            <a href="#" class="hoverable_element" title="Sign In">> Sign In</a><br />
+            <a href="#" class="hoverable_element" title="Enter as Guest">> Enter as Guest</a>
+        </div>
+    </div>
     <script src="js/vendor/bootstrap.min.js"></script>
 
 

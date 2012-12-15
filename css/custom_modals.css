@@ -1,0 +1,31 @@
+﻿#signup_modal
+{
+    width:564px;
+    height:450px;
+    background-color:#FFFFFF;
+    display:none;
+    background:url('../images/signuplogin_background.png');
+}
+
+#signup_modal .iadtx_logo
+{
+    width:278px;
+    height:38px;
+    display:block;
+    margin:0 auto;
+    margin-top:97px;
+}
+
+.modal_signin_labels
+{
+    font-size:37px;
+    font-family:Helvetica;
+    font-size:37px;
+    margin-left:110px;
+    margin-top:50px;
+    line-height:65px;
+}
+.modal_signin_labels a:hover
+{
+    color:#6a8722;
+}
