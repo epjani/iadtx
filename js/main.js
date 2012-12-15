@@ -58,8 +58,9 @@ $(function () {
 function openModal(modal_id) {
     switch (modal_id) {
         case 'signup_modal':
+        case 'signin_modal':
             {
-                $("#signup_modal").bPopup({
+                $("#" + modal_id).bPopup({
                     modalColor: '#242424'
                 });
             }
