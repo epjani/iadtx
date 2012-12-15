@@ -401,6 +401,23 @@ form
         padding:0px 5px;
         height:53px;
     }
+    /*********************FOOTER******************/
+    .footer {
+        background-color:#242222;
+    }
+    .footer-logos {
+        width:390px;
+        margin:0 auto;
+        margin-top:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .footer-text {
+        color:#8c8989;
+        text-align:center;
+        font-size:10px;
+        line-height:15px;
+    }
 }
 
 
