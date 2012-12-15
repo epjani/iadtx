@@ -19,6 +19,10 @@ function hide_advanded_filter() {
 
 $(document).ready(function () {
     $('#scrollable').jScrollPane();
+    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
+    $('#scrollable, .jspContainer,.jspPane, .profiles').mousewheel(function (event) {
+        event.preventDefault();
+    });
 });
 $(function () {
     $('#scrollable').each(
