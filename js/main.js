@@ -27,8 +27,11 @@ $(function () {
                     } else {
                         api.reinitialise();
                     }
+                    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
+                   
                 }
             );
+            
         }
     )
 });
@@ -55,12 +58,8 @@ function hide_advanded_filter() {
 $(document).ready(function () {
     $('#scrollable').jScrollPane();
     $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
-    $('#scrollable, .jspContainer,.jspPane, .profiles').mousewheel(function (event) {
-        event.preventDefault();
-    });
+
 });
-
-
 function openModal(modal_id) {
     switch (modal_id) {
         case 'signup_modal':
