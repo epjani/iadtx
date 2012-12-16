@@ -67,14 +67,14 @@ function openModal(modal_id) {
         case 'signup_modal':
             {
                 $("#" + modal_id).bPopup({
-                    modalColor: '#242424',
+                    modalColor: '#242223',
                     escClose: true
                 });
             }
         case 'signin_modal':
             {
                 $("#" + modal_id).bPopup({
-                    modalColor: '#242424',
+                    modalColor: '#242223',
                     onOpen: function () {
                         if ($("#signup_modal").is(":visible")) {
                             $("#signup_modal").bPopup().close();
