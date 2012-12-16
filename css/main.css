@@ -528,6 +528,7 @@ form
 }
 .profile-box:hover {
     border:3px solid #5b6d2b;
+    cursor:pointer;
 }
 .pr-name {
     margin-top:10px;
@@ -542,9 +543,41 @@ form
     padding:0px 5px;
     height:53px;
 }
+/*********************CONNECTIONS - PROFILES****************/
+.profile-box2 {
+    width:225px;
+    float:left;
+    height:80px;
+    background-color:#444444;
+    padding:9px;
+    border:3px solid #2b2b2b;
+    margin-right:8px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.profile-box2:hover {
+    border:3px solid #5b6d2b;
+    cursor:pointer;
+}
+.pr-name2 {
+    font-size:13px;
+    font-weight:bold;
+    padding-right:0px;
+    color:#fff;
+}
+.pr-img-small {
+    float:left;
+}
+.pr-info2 {
+    float:left;
+    font-size:12px;
+    margin-top:6px;
+    margin-left:8px;
+    color:#cbcbcb;
+}
 /*********************FOOTER******************/
 .footer {
-    background-color:#242222;
+    background-color:#242424;
 }
 .footer-logos {
     width:390px;

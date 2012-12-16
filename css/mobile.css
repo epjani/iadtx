@@ -1,6 +1,9 @@
 @media (max-width: 640px)
 {
     /****************************PAGE LAYOUT***********************************/
+    body {
+        background-color:#242223;
+    }
     #iadtx_page_container
     {
         float: left;
@@ -18,12 +21,14 @@
         padding-top:10px;
         padding-left:0px;
         min-height:115px;
+        background-color:#2b2b2b;
     }
     #content_placeholder
     {
-        height:715px;
-        border-bottom:2px solid #FFF;
+        height:auto;
+        border:none;
         padding-left:0px;
+        background-color:#2c2b2b;
     }
     #right_panel_container
     {
@@ -45,8 +50,9 @@
         float:right;
         margin-top:0px;
         min-width:324px;
-        background-color:#242424;
+        background-color:#242223;
         padding:5px 5px;
+        padding-bottom:12px;
     }
     #main_page_navigation li
     {   
@@ -65,15 +71,21 @@
     }
     #main_page_navigation li a:hover
     {
-        color:#6a8722 !important;
+        color:#6a8722!important;
     }
-    
     #search_box
     {
         float:right;
-        margin-top:14px;
+        margin-top:0px;
         margin-left:0px;
         max-width:198px;
+        margin-right:5px;
+    }
+    #search_box span {
+        float:right;
+        font-size:11px;
+        padding-bottom:3px;
+        padding-right:6px;
     }
     #iadtx_global_search
     {
@@ -83,6 +95,9 @@
         border:none;
         font-size:12px;
         padding-left:13px;
+        right: 0px;
+        margin-right: 0px;
+        margin-left: 32px;
     }
     #iadtx_global_search:focus
     {
@@ -102,16 +117,17 @@
     }
     #iadtx_search_submit
     {
-        margin-top:-10px;
-        margin-left:4px;
-        background:url('../images/search_ico.png') no-repeat;
+        margin-top:-3px;
+        margin-left:-30px;
+        background:url('../images/mobilesearchbtn.png') no-repeat;
         width:26px;
         height:24px;
         border:none;
+        
     }
     #advanced_search
     {
-        background-color:#242424;
+        background-color:#242223;
         height:38px;
         margin-top:15px;
         font-family:Helvetica;
@@ -133,7 +149,7 @@
 	}
     /*********************FOOTER******************/
     .footer {
-        background-color:#242222;
+        background-color:#242223;
     }
     .footer-logos {
         width:390px;
@@ -147,6 +163,7 @@
         text-align:center;
         font-size:10px;
         line-height:15px;
+        padding:0px 10px;
     }
 
     /*************GLOBAL STYLES RESPONSIVE****************/
