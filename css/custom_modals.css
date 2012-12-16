@@ -1,4 +1,4 @@
-﻿#signup_modal
+﻿#signup_modal, #signin_modal
 {
     width:564px;
     height:450px;
@@ -7,7 +7,7 @@
     background:url('../images/signuplogin_background.png');
 }
 
-#signup_modal .iadtx_logo
+#signin_modal .iadtx_logo, #signup_modal .iadtx_logo 
 {
     width:278px;
     height:38px;
@@ -16,16 +16,68 @@
     margin-top:97px;
 }
 
+#signup_modal .modal_signin_labels
+{
+    margin-top:50px;
+    line-height:65px;
+    margin-left:110px;
+}
+
 .modal_signin_labels
 {
     font-size:37px;
     font-family:Helvetica;
     font-size:37px;
-    margin-left:110px;
-    margin-top:50px;
-    line-height:65px;
 }
+
+#signin_modal .modal_signin_labels
+{
+    margin-top:25px;
+    margin-left:140px;
+    margin-bottom:15px;
+}
+
 .modal_signin_labels a:hover
+{
+    color:#6a8722;
+}
+#modal_signin
+{
+    margin-left:140px;
+}
+.modal_signin_txtbox
+{
+    width:240px;
+    height:14px;
+    padding:8px;
+    margin-bottom:20px !important;
+}
+
+#modal_signin_submit
+{
+    width:65px;
+    height:22px;
+    background-color:#818285;
+    text-align:center;
+    border:none;
+    color:#FFF;
+    float:left;
+    font-size:14px;
+}
+
+#not_a_member
+{
+    font-size:14px;
+    color:#FFF;
+    float:left;
+    margin-left:6px;
+    margin-top:3px;
+}
+#not_a_member a
+{
+    color:#848587;
+}
+#not_a_member a:hover
 {
     color:#6a8722;
 }

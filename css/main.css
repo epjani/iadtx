@@ -77,7 +77,44 @@ form
     float:left;
     max-width:280px;
 }
-    
+    /****************************PAGE LAYOUT***********************************/
+    #iadtx_page_container
+    {
+        float: left;
+        width: 100%;
+    }
+    #padding-wrapper {
+        padding:30px 0px 0px 25px;
+    }
+    #content_container
+    {
+        margin-right: 280px;
+    }
+    #header_container
+    {
+        padding-top:30px;
+        padding-left:25px;
+        min-height:115px;
+    }
+    #content_placeholder
+    {
+        height:695px;
+        border-bottom:2px solid #FFF;
+        padding-left:25px;
+    }
+    #right_panel_container
+    {
+        float: left;
+        width: 280px;
+        margin-left: -280px;
+        margin-top:26px;
+    }
+    /****************************HEADER AND MENUS***********************************/
+    #iadtx_header_logo
+    {
+        float:left;
+        max-width:280px;
+    }
 #page_navigation
 {
     float:left;
@@ -102,7 +139,6 @@ form
 {
     color:#6a8722 !important;
 }
-    
 #search_box
 {
     float:left;
@@ -155,7 +191,59 @@ form
     width:100%;
     z-index: 100;
 }
-    
+#search_box
+{
+    float:left;
+    margin-top:14px;
+    margin-left:0px;
+    max-width:198px;
+}
+#iadtx_global_search
+{
+    width:142px;
+    height:21px;
+    background:url('../images/search_frame.png') no-repeat;
+    border:none;
+    font-size:12px;
+    padding-left:13px;
+}
+#iadtx_global_search:focus
+{
+    border:none;
+    box-shadow:none;
+}
+/* TODO make palceholder for IE8 - */
+#iadtx_global_search::-webkit-input-placeholder
+{
+    color:#b2b1b1;
+    font-size:9px;
+}
+#iadtx_global_search:-moz-placeholder  
+{
+    color:#b2b1b1;
+    font-size:9px;
+}
+#iadtx_search_submit
+{
+    margin-top:-10px;
+    margin-left:4px;
+    background:url('../images/search_ico.png') no-repeat;
+    width:26px;
+    height:24px;
+    border:none;
+}
+#advanced_search
+{
+    background-color:#242424;
+    height:38px;
+    margin-top:15px;
+    font-family:Helvetica;
+    font-size:13px;
+    position:relative;
+    width:100%;
+    z-index: 100;
+    float:left;
+} 
 #advanced_filter
 {
     width:128px;
@@ -267,7 +355,6 @@ form
     background-color:#242424;
     color:#FFFFFF;
 }
-    
 #advanced_search_submenu
 {
     color:#FFFFFF;
@@ -297,6 +384,58 @@ form
     border-left:3px solid #FFF;
     border-top: 3px solid #FFF;
     height:728px;
+    padding:15px 0 18px 20px;
+}
+#no_avatar_rightpanel
+{
+    float:left;
+}
+#sign_up_label
+{
+    font-family:Helvetica;
+    font-size:14px;
+    float:left;
+    margin-left:7px;
+}
+.RHS_login_btn
+{
+    width:66px;
+    height:18px;
+    float:left;
+    font-size:10px;
+    padding-top:4px;
+    margin-left:7px;
+    margin-top:20px;
+}
+#advanced_search_submenu
+{
+    color:#FFFFFF;
+    float:right;
+    font-family:Helvetica;
+    font-size:13px;
+    margin-top:11px;
+    margin-right:5px;
+}
+#advanced_search_submenu a:hover
+{
+    color:#6a8722 !important;
+}
+.advanced_submenu_item
+{
+    padding:0px 10px 0px 5px;
+}
+/****************************RHS PROFILE PANEL***********************************/
+#right_panel_label
+{
+    font-size:60px;
+    padding-left:16px;
+    height:72px;
+}
+#right_panel_content
+{
+    border-left:3px solid #FFF;
+    border-top: 3px solid #FFF;
+    height:708px;
     padding:15px 0 18px 20px;
 }
 #no_avatar_rightpanel
@@ -374,7 +513,7 @@ form
 }
 .profiles {
         
-}
+    }
 .profile-box {
     height:300px;
     width: 125px;
@@ -385,6 +524,7 @@ form
     margin-top:4px;
     margin-bottom:8px;
     border:3px solid #2b2b2b;
+    cursor:pointer;
 }
 .profile-box:hover {
     border:3px solid #5b6d2b;
@@ -419,6 +559,5 @@ form
     font-size:10px;
     line-height:15px;
 }
-
 
 

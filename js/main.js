@@ -28,12 +28,17 @@ $(function () {
                         api.reinitialise();
                     }
                     $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
-                   
+                    if ($(window).width < 481)
+                    {
+                        api.destroy();
+                    }
                 }
             );
             
         }
     )
+    $('#scrollable').jScrollPane();
+    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
 });
 
 $(document).mouseup(function (e) {
@@ -42,6 +47,7 @@ $(document).mouseup(function (e) {
         hide_advanded_filter();
     }
 });
+
 function toggle_advanced_filter() {
     if ($('#advanced_filter_content').is(':visible')) {
         hide_advanded_filter();
@@ -55,17 +61,26 @@ function hide_advanded_filter() {
     $('#advanced_filter').removeClass('selected');
 }
 
-$(document).ready(function () {
-    $('#scrollable').jScrollPane();
-    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
-
-});
 function openModal(modal_id) {
+    // TODO : check why escClose doesn't work. If there's no solution implement our own by binding keyup event
     switch (modal_id) {
         case 'signup_modal':
             {
-                $("#signup_modal").bPopup({
-                    modalColor: '#242424'
+                $("#" + modal_id).bPopup({
+                    modalColor: '#242424',
+                    escClose: true
+                });
+            }
+        case 'signin_modal':
+            {
+                $("#" + modal_id).bPopup({
+                    modalColor: '#242424',
+                    onOpen: function () {
+                        if ($("#signup_modal").is(":visible")) {
+                            $("#signup_modal").bPopup().close();
+                        }
+                    },
+                    escClose: true
                 });
             }
     }
