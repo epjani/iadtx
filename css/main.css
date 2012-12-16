@@ -54,6 +54,7 @@ form
 }
 #header_container
 {
+
     padding-top:30px;
     padding-left:25px;
     min-height:115px;
@@ -182,7 +183,7 @@ form
 }
 #advanced_search
 {
-    background-color:#242424;
+    background-color:#242223;
     height:38px;
     margin-top:15px;
     font-family:Helvetica;
@@ -234,7 +235,7 @@ form
 }
 #advanced_search
 {
-    background-color:#242424;
+    background-color:#242223;
     height:38px;
     margin-top:15px;
     font-family:Helvetica;
@@ -300,7 +301,7 @@ form
 {
     width:520px;
     height:210px;
-    background-color:#242424;
+    background-color:#242223;
     position:absolute;
     top:38px;
     padding:45px 15px 15px 15px;
@@ -352,7 +353,7 @@ form
     float:right;
     font-size:15px;
     font-family:Helvetica;
-    background-color:#242424;
+    background-color:#242223;
     color:#FFFFFF;
 }
 #advanced_search_submenu
@@ -598,7 +599,7 @@ form
 }
 /*********************FOOTER******************/
 .footer {
-    background-color:#242424;
+    background-color:#242223;
 }
 .footer-logos {
     width:390px;
