@@ -1,4 +1,5 @@
-﻿﻿git checkout gh-pages
+﻿#!/bin/sh
+﻿git checkout gh-pages
 git merge master
 git push
 git checkout master
