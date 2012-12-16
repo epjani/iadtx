@@ -340,7 +340,7 @@ form
         float:left;
     }
     
-    #RHS_major_kudos
+    #RHS_artist
     {
         width:242px;
         text-align:left;
@@ -348,11 +348,11 @@ form
         font-size:15px;
         margin-top:35px;
     }
-    #RHS_major_kudos ul
+    #RHS_artist ul
     {
         margin-top:6px;
     }
-    #RHS_major_kudos ul li
+    #RHS_artist ul li
     {
         margin-right:8px;
         margin-bottom:6px;
