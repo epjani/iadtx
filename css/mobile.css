@@ -1,0 +1,177 @@
+@media (max-width: 640px)
+{
+    /****************************PAGE LAYOUT***********************************/
+    #iadtx_page_container
+    {
+        float: left;
+        width: 100%;
+    }
+    #padding-wrapper {
+        padding:30px 0px 0px 0px;
+    }
+    #content_container
+    {
+        margin-right: 0;
+    }
+    #header_container
+    {
+        padding-top:10px;
+        padding-left:0px;
+        min-height:115px;
+    }
+    #content_placeholder
+    {
+        height:715px;
+        border-bottom:2px solid #FFF;
+        padding-left:0px;
+    }
+    #right_panel_container
+    {
+        float: left;
+        width: 280px;
+        margin-left: -280px;
+        margin-top:26px;
+        display:none;
+    }
+    /****************************HEADER AND MENUS***********************************/
+    #iadtx_header_logo
+    {
+        float:left;
+        max-width:280px;
+        margin-left:5px;
+    }
+    #page_navigation
+    {
+        float:right;
+        margin-top:0px;
+        min-width:324px;
+        background-color:#242424;
+        padding:5px 5px;
+    }
+    #main_page_navigation li
+    {   
+        height:30px;
+        float:left;
+        text-align:center;
+        font-size:17px;
+        padding-top:16px;
+        width:169px;
+    }
+    #main_page_navigation li.selected
+    {
+        width:169px;
+        background: url("../images/mobile-active.png") no-repeat;
+
+    }
+    #main_page_navigation li a:hover
+    {
+        color:#6a8722 !important;
+    }
+    
+    #search_box
+    {
+        float:right;
+        margin-top:14px;
+        margin-left:0px;
+        max-width:198px;
+    }
+    #iadtx_global_search
+    {
+        width:142px;
+        height:21px;
+        background:url('../images/search_frame.png') no-repeat;
+        border:none;
+        font-size:12px;
+        padding-left:13px;
+    }
+    #iadtx_global_search:focus
+    {
+        border:none;
+        box-shadow:none;
+    }
+    /* TODO make palceholder for IE8 - */
+    #iadtx_global_search::-webkit-input-placeholder
+    {
+        color:#b2b1b1;
+        font-size:9px;
+    }
+    #iadtx_global_search:-moz-placeholder  
+    {
+        color:#b2b1b1;
+        font-size:9px;
+    }
+    #iadtx_search_submit
+    {
+        margin-top:-10px;
+        margin-left:4px;
+        background:url('../images/search_ico.png') no-repeat;
+        width:26px;
+        height:24px;
+        border:none;
+    }
+    #advanced_search
+    {
+        background-color:#242424;
+        height:38px;
+        margin-top:15px;
+        font-family:Helvetica;
+        font-size:13px;
+        position:relative;
+        width:100%;
+        z-index: 100;
+        display:none;
+    }
+    /****************************RHS PROFILE PANEL***********************************/
+    /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
+    /* Styles specific to this particular page */
+	.scroll-pane
+	{
+		width: 100%;
+		height: 680px;
+		overflow: auto;
+        display:none;
+	}
+    /*********************FOOTER******************/
+    .footer {
+        background-color:#242222;
+    }
+    .footer-logos {
+        width:390px;
+        margin:0 auto;
+        margin-top:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .footer-text {
+        color:#8c8989;
+        text-align:center;
+        font-size:10px;
+        line-height:15px;
+    }
+
+    /*************GLOBAL STYLES RESPONSIVE****************/
+    .hide-on-mobile {
+    display:none!important;
+    }
+    .hide-on-desktop {
+    display:block!important;
+    }
+    .mobile-header {
+    display:block!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

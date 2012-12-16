@@ -18,6 +18,7 @@
     <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/plugins.css">
     <link href="css/custom_modals.css" rel="stylesheet" type="text/css" />
 
@@ -34,7 +35,7 @@
                         <a id="iadtx_header_logo" href="#" title="IADTx network" >
                             <img src="images/iadtx_header_logo.png" alt="IADTx network" />
                         </a>
-                        <div id="page_navigation" class="span2">
+                        <div id="page_navigation" class="span2 hide-on-mobile">
                             <ul id="main_page_navigation" class="unstyled">
                                 <li class="selected">
                                     <a href="#">Explore</a>
@@ -47,11 +48,34 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="search_box" class="span4">
+                        <div id="search_box" class="span4 hide-on-mobile">
                             <form action="search.html" id="iadtx_search">
                                 <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
                                 <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
                             </form>
+                        </div>
+                        <div class="mobile-header">
+                            <div id="search_box" class="span4">
+                                <form action="search.html" id="iadtx_search">
+                                    <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
+                                    <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
+                                </form>
+                            </div>
+                            <div class="mobile-top-menu">
+                                <div id="page_navigation" class="span2">
+                                    <ul id="main_page_navigation" class="unstyled">
+                                        <li class="selected">
+                                            <a href="#">Explore</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Magazine</a>
+                                        </li>
+                                    </ul>
+                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -251,7 +275,8 @@
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
-                    <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
+                    <li><a href="#" title="97
+                        Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>

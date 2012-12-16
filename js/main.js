@@ -28,7 +28,10 @@ $(function () {
                         api.reinitialise();
                     }
                     $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
-                   
+                    if ($(window).width < 481)
+                    {
+                        api.destroy();
+                    }
                 }
             );
             
