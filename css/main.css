@@ -511,8 +511,10 @@ form
 	max-height: 680px;
 }
 .profiles {
-        
-    }
+    width:1700px;
+    height:680px;
+    overflow:hidden;        
+}
 .profile-box {
     height:300px;
     width: 125px;
@@ -652,6 +654,7 @@ form
     color:#a1a1a1;
     position:absolute;
     bottom:8px;
+    left:8px;   
 }
 
 .portfolio_item .pi_label
