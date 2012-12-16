@@ -511,8 +511,10 @@ form
 	max-height: 680px;
 }
 .profiles {
-        
-    }
+    width:1700px;
+    height:680px;
+    overflow:hidden;        
+}
 .profile-box {
     height:300px;
     width: 125px;
@@ -615,12 +617,35 @@ form
     position:relative;
     border:3px solid #444444;
 }
+.wide_item
+{
+    width:420px;
+}
+.narrow_item
+{
+    width:197px;   
+}
 .portfolio_item:hover
 {
     cursor:pointer;
     border:3px solid #6B6D2B;
 }
-
+.wide_item .pi_footer
+{
+    width:420px;
+}
+.narrow_item .pi_footer
+{
+    width:197px;
+}
+.wide_item .pi_label
+{
+    width:315px;
+}
+.narrow_item .pi_label
+{
+    width:96px;
+}
 .portfolio_item .pi_footer
 {
     height:24px;
@@ -629,6 +654,7 @@ form
     color:#a1a1a1;
     position:absolute;
     bottom:8px;
+    left:8px;   
 }
 
 .portfolio_item .pi_label
