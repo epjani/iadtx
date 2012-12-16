@@ -25,6 +25,17 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>
     <script src="js/jquery.bpopup-0.7.0.min.js" type="text/javascript"></script>
+    <style>
+        #right_panel_container
+        {
+            margin-top:0px;
+        }
+        #right_panel_content
+        {
+            border-top:none;
+            height:809px;
+        }
+    </style>
 </head>
 <body>
     <div id="iadtx_page_container">
@@ -37,10 +48,10 @@
                         <div id="page_navigation" class="span2 hide-on-mobile">
                             <ul id="main_page_navigation" class="unstyled">
                                 <li >
-                                    <a href="#">Explore</a>
+                                    <a href="index.html">Explore</a>
                                 </li>
                                 <li class="selected">
-                                    <a href="#">Profile</a>
+                                    <a href="profile.html">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#">Magazine</a>
@@ -614,7 +625,14 @@
     <div id="right_panel_container">
         <div id="right_panel_content">
             <div id="rhs_profile_menu">
-                
+                <img class="rhs_profile_picture" src="images/profile_picture_example.jpg" alt="Justin Lambert" />
+                <div id="profile_details_placeholder">
+                    <span id="profile_name">Justin Lambert</span><br />
+                    Graphic Design<br />
+                    Tampa, FL
+                    <a id="connect_with_person" href="#" title="Connect"></a>
+                    <a id="download_resime" href="#" title="Download"></a>
+                </div>
             </div>
         </div>
     </div>

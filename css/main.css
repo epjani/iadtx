@@ -684,3 +684,52 @@ a.pi_count
     font-size:10px;
     text-align:center;
 }
+
+
+/******** RHS Profile *******/
+#rhs_profile_menu
+{
+    height:520px;
+    width:236px;
+    background-color:#444444;
+}
+
+.rhs_profile_picture
+{
+    margin:4px 0px 8px 4px;
+}
+#profile_details_placeholder
+{
+    font-size:11px;
+    padding-left:12px;
+    width:214px;
+    position:relative;
+    line-height:18px;
+}
+#profile_details_placeholder #profile_name
+{
+    font-size:17px;
+}
+
+#connect_with_person
+{
+    width:70px;
+    height:21px;
+    background:url('../images/profile_connect.png') no-repeat;
+    display:block;
+    float:right;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+#download_resime
+{
+    width:26px;
+    height:26px;
+    background:url('../images/download_profile_ico.jpg') no-repeat;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    right:5px;
+}
