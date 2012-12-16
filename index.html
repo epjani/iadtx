@@ -131,9 +131,9 @@
                     </div>
 
                 </div>
+                <div class="clearfix"></div>
                 <div id="content_placeholder">
                     <div id="scrollable" class="horizontal-only scroll-pane">
-                        <!-- TODO : see with Adin for resizing content inside this element -->
                         <div class="profiles" style="width:1700px;height:680px;overflow:hidden;">
                             <div class="profile-box">
                                 <img class="pr-img" alt="profile image" src="images/pr1.jpg" />
@@ -236,7 +236,7 @@
                     the IADTXnetwork
                 </div>
                 <a id="RHS_sign_up_btn" href="#" title="Sign Up" class="RHS_login_btn gray_button" onclick="openModal('signup_modal');">Sign Up</a>
-                <a id="RHS_login_btn" href="#" title="Login" class="RHS_login_btn gray_button">Login</a>
+                <a id="RHS_login_btn" href="#" title="Login" class="RHS_login_btn gray_button" onclick="openModal('signin_modal');">Login</a>
             </div>
             <div class="clearfix"></div>
             <div id="RHS_artists_you_may_know">
@@ -298,13 +298,21 @@
         <img src="images/iadtx_header_logo.png" class="iadtx_logo" />
         <div class="clearfix"></div>
         <div class="modal_signin_labels">
-            <a href="#" class="hoverable_element" title="Sign In">> Sign In</a><br />
+            <a href="#" class="hoverable_element" title="Sign In" onclick="openModal('signin_modal');">> Sign In</a><br />
             <a href="#" class="hoverable_element" title="Enter as Guest">> Enter as Guest</a>
         </div>
     </div>
 
     <div id="signin_modal" style="display:none;">
+        <img src="images/iadtx_header_logo.png" class="iadtx_logo" />
+        <div class="clearfix"></div>
         <div class="modal_signin_labels" >Sign In</div>
+        <form id="modal_signin">
+            <input type="text" name="email" placeholder="Email Address" class="modal_signin_txtbox"/><br />
+            <input type="password" name="password" placeholder="Password" class="modal_signin_txtbox"/><br />
+            <input id="modal_signin_submit" type="submit" value="Sign In" />
+            <div id="not_a_member">Not a member? <a href="#" title="Sign Up!">Sign Up!</a></div>
+        </form>
     </div>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
