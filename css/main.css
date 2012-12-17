@@ -479,28 +479,7 @@ form
     margin-bottom:5px;
     float:left;
 }
-    
-<<<<<<< HEAD
-    #RHS_artist
-    {
-        width:242px;
-        text-align:left;
-        color:#FFF;
-        font-size:15px;
-        margin-top:35px;
-    }
-    #RHS_artist ul
-    {
-        margin-top:6px;
-    }
-    #RHS_artist ul li
-    {
-        margin-right:8px;
-        margin-bottom:6px;
-        float:left;
-    }
-=======
-#RHS_major_kudos
+#RHS_artist
 {
     width:242px;
     text-align:left;
@@ -508,18 +487,16 @@ form
     font-size:15px;
     margin-top:35px;
 }
-#RHS_major_kudos ul
+#RHS_artist ul
 {
     margin-top:6px;
 }
-#RHS_major_kudos ul li
+#RHS_artist ul li
 {
     margin-right:8px;
     margin-bottom:6px;
     float:left;
-}
->>>>>>> 1db0c3e151eb74b8acf453d0101882fe929a657d
-    
+}   
 /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
 /* Styles specific to this particular page */
 .scroll-pane
@@ -534,8 +511,10 @@ form
 	max-height: 680px;
 }
 .profiles {
-        
-    }
+    width:1700px;
+    height:680px;
+    overflow:hidden;        
+}
 .profile-box {
     height:300px;
     width: 125px;
@@ -616,3 +595,141 @@ form
 }
 
 
+/************************** Profile ******************************/
+
+/**************** Portfolio ************************/
+.portfolio_items
+{
+    width:2700px;
+    height:665px;
+    overflow:hidden;
+    padding-top:15px;
+}
+
+.portfolio_item
+{
+    height:283px;
+    float:left;
+    margin-right:8px;
+    margin-bottom:8px;
+    padding:8px;
+    background-color:#444444;
+    position:relative;
+    border:3px solid #444444;
+}
+.wide_item
+{
+    width:420px;
+}
+.narrow_item
+{
+    width:197px;   
+}
+.portfolio_item:hover
+{
+    cursor:pointer;
+    border:3px solid #6B6D2B;
+}
+.wide_item .pi_footer
+{
+    width:420px;
+}
+.narrow_item .pi_footer
+{
+    width:197px;
+}
+.wide_item .pi_label
+{
+    width:315px;
+}
+.narrow_item .pi_label
+{
+    width:96px;
+}
+.portfolio_item .pi_footer
+{
+    height:24px;
+    bottom:8px;
+    font-size:11px;
+    color:#a1a1a1;
+    position:absolute;
+    bottom:8px;
+    left:8px;   
+}
+
+.portfolio_item .pi_label
+{
+    float:left;
+}
+
+.portfolio_item .pi_links
+{
+    width:95px;
+    float:right;
+    margin-top:4px;
+}
+
+.pi_links a
+{
+    margin-right:5px;
+    float:left;
+}
+a.pi_count
+{
+    display:block;
+    width:21px;
+    height:16px;
+    background:url('../images/count_ico.png') no-repeat;
+    color:#dcdbdb;
+    font-size:10px;
+    text-align:center;
+}
+
+
+/******** RHS Profile *******/
+#rhs_profile_menu
+{
+    height:520px;
+    width:236px;
+    background-color:#444444;
+}
+
+.rhs_profile_picture
+{
+    margin:4px 0px 8px 4px;
+}
+#profile_details_placeholder
+{
+    font-size:11px;
+    padding-left:12px;
+    width:214px;
+    position:relative;
+    line-height:18px;
+}
+#profile_details_placeholder #profile_name
+{
+    font-size:17px;
+}
+
+#connect_with_person
+{
+    width:70px;
+    height:21px;
+    background:url('../images/profile_connect.png') no-repeat;
+    display:block;
+    float:right;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+#download_resime
+{
+    width:26px;
+    height:26px;
+    background:url('../images/download_profile_ico.jpg') no-repeat;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    right:5px;
+}
