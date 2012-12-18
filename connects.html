@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=480; user-scalable=yes" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -25,6 +25,17 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>
     <script src="js/jquery.bpopup-0.7.0.min.js" type="text/javascript"></script>
+    <style>
+        #right_panel_container
+        {
+            margin-top:0px;
+        }
+        #right_panel_content
+        {
+            border-top:none;
+            height:794px;
+        }
+    </style>
 </head>
 <body>
     <div id="iadtx_page_container">
@@ -36,11 +47,11 @@
                         </a>
                         <div id="page_navigation" class="span2 hide-on-mobile">
                             <ul id="main_page_navigation" class="unstyled">
-                                <li class="selected">
-                                    <a href="#">Explore</a>
+                                <li >
+                                    <a href="index.html">Explore</a>
                                 </li>
-                                <li>
-                                    <a href="#">Profile</a>
+                                <li class="selected">
+                                    <a href="profile.html">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#">Magazine</a>
@@ -64,7 +75,7 @@
                             <div class="mobile-top-menu">
                                 <div id="page_navigation" class="span2">
                                     <ul id="main_page_navigation" class="unstyled">
-                                        <li class="selected">
+                                        <li>
                                             <a href="#">Explore</a>
                                         </li>
                                         <li>
@@ -157,290 +168,355 @@
 
                 </div>
                 <div class="clearfix"></div>
+                <div class="mobile-placeholder" style="display:none;">
+                    <div class="mobile-profile-info">
+                        <div class="name">Just Lambert</div>
+                        <div class="followers">+4013</div>
+                        <div class="mpr-img"><img src="images/mobileprofileimg.jpg" alt="profile image" /></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="mobile-menu">
+                        <div class="mobile-menu-item">
+                            <div class="mtitle"><a href="#about">About</a></div>
+                            <div class="item-links">
+                                <a href="#newsfeed">News Feed</a> | <a href="#manageprofile">Manage Profile</a> | <a href="#accsettings">Account Settings</a>
+                            </div>
+                        </div>
+                        <div class="mobile-menu-item"><div class="mtitle"><a href="#Portfolio">Portfolio</a></div></div>
+                        <div class="mobile-menu-item"><div class="mtitle"><a href="#Contact">Contact</a></div></div>
+                        <div class="mobile-menu-item"><div class="mtitle"><a href="#Resume">Resume</a></div></div>
+                        <div class="mobile-menu-item"><div class="mtitle"><a href="#Favorites">Favorites</a></div></div>
+                        <div class="mobile-menu-item active"><div class="mtitle"><a href="#Connections">Connections</a></div></div>
+                        <div class="mobile-menu-content-ph">
+                            <div class="profile-box2">
+                                <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                </div>
+                            </div>
+                            <div class="profile-box2">
+                                <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                </div>
+                            </div>
+                            <div class="profile-box2">
+                                <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                </div>
+                            </div>
+                            <div class="profile-box2">
+                                <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="loadmore">
+                                Load More Connections <span>(+4012)</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
                 <div id="content_placeholder">
                     <div id="scrollable" class="horizontal-only scroll-pane hide-on-mobile">
-                        <div class="profiles" style="width:1700px;height:680px;overflow:hidden;">
+                        <div id="connections" class="profiles content_replacer">
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
                             </div>
                             <div class="profile-box2">
                                 <img class="pr-img-small" alt="profile image" src="images/pr1small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
+                                <div class="pr-info2"><span class="pr-name2">Veronica Moore</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
                                 </div>
-                            </div>
-                            <div class="profile-box2">
-                                <img class="pr-img-small" alt="profile image" src="images/pr2small.jpg" />
-                                <div class="pr-info2"><span class="pr-name2">Sam Wellington</span><br />                                Photography<br />                                Chicago, IL<br />                                1982 Connects<br />
-                                </div>
-                            </div>
-                            
+                            </div>   
                         </div>
                     </div>
                 </div>
         </div>
     </div>
     <div id="right_panel_container">
-        <!-- content specific for "Explore" -->
-        <div id="right_panel_label" class="font_green">Explore</div>
         <div id="right_panel_content">
-            <div id="signup_wrapper">
-                <img id="no_avatar_rightpanel" src="images/no_profile_avatar.jpg" alt="No prifile avatar" />
-                <div id="sign_up_label">
-                    Sign Up & experience<br />
-                    the IADTXnetwork
+            <div id="rhs_profile_menu">
+                <img class="rhs_profile_picture" src="images/profile_picture_example.jpg" alt="Justin Lambert" />
+                <div id="profile_details_placeholder">
+                    <span id="profile_name">Justin Lambert</span><br />
+                    Graphic Design<br />
+                    Tampa, FL
+                    <a id="connect_with_person" href="#" title="Connect"></a>
+                    <a id="download_resime" href="#" title="Download"></a>
                 </div>
-                <a id="RHS_sign_up_btn" href="#" title="Sign Up" class="RHS_login_btn gray_button" onclick="openModal('signup_modal');">Sign Up</a>
-                <a id="RHS_login_btn" href="#" title="Login" class="RHS_login_btn gray_button" onclick="openModal('signin_modal');">Login</a>
+                <div class="clearfix"></div>
+                <div id="rhs_profile_nav">
+                    <ul class="unstyled">
+                        <div class="rhs_divider_1"></div>
+                        <li id="rhs_portfolio" class="first"><a href="profile.html" title="Portfolio">Portfolio</a></li>
+                        <div class="rhs_divider_2"></div>
+                        <li id="rhs_contact"><a href="#" title="Contact">Contact</a></li>
+                        <div class="rhs_divider_2"></div>
+                        <li id="rhs_resume"><a href="#" title="Resume">Resume</a></li>
+                        <div class="rhs_divider_2"></div>
+                        <li id="rhs_favorites"><a href="favorites.html" title="Favorites">Favorites</a></li>
+                        <div class="rhs_divider_2"></div>
+                        <li id="rhs_connections" class="selected"><a href="connects.html" title="Connections">Connections</a></li>
+                        <div class="rhs_divider_2"></div>
+                    </ul>
+                </div>
             </div>
             <div class="clearfix"></div>
-            <div id="RHS_artists_you_may_know">
+            <div id="rhs_about_artist">
+                <span style="font-size:17px;">About Justin.</span><br />
+                I'm a brand focused designer <br />
+                with a passion for hand-written type + the<br />
+                web. I'm also known as a runner and <br />
+                beach bum surfer who loves moleskines<br />
+                and like-minded creatives.
+            </div>
+            <div id="rhs_artists_you_may_know_profile">
                 <span>Artists you may know</span>
                 <ul class="unstyled">
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
@@ -451,9 +527,6 @@
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
-                    <li><a href="#" title="97
-                        Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
-                    <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
@@ -461,24 +534,9 @@
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                     <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
-                    <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
-                    <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_1.jpg" alt="Artist 1" /></a></li>
-                    <li><a href="#" title="Artist you may know"><img src="images/may_know_artist_2.jpg" alt="Artist 2" /></a></li>
                 </ul>
-            </div>
-            <div class="clearfix"></div>
-            <div id="RHS_major_kudos">
-                <span>Major Kudos</span>
-                <ul class="unstyled">
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_1.jpg" alt="Example 1" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_2.jpg" alt="Example 2" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_1.jpg" alt="Example 1" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_2.jpg" alt="Example 2" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_1.jpg" alt="Example 1" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_2.jpg" alt="Example 2" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_1.jpg" alt="Example 1" /></a></li>
-                    <li><a href="#" title="Major Kudos"><img src="images/rhs_major_2.jpg" alt="Example 2" /></a></li>
-                </ul>
+                <div class="clearfix"></div>
+                <div id="rhs_view_all_artists"><a href="#" title="View All Similar Artists">View All</a></div>
             </div>
         </div>
     </div>

@@ -3,7 +3,8 @@ $(function () {
         function () {
             $(this).jScrollPane(
                 {
-                    showArrows: $(this).is('.arrow')
+                    showArrows: $(this).is('.arrow'),
+                    autoReinitialise: true
                 }
             );
             var api = $(this).data('jsp');
@@ -85,3 +86,24 @@ function openModal(modal_id) {
             }
     }
 }
+
+//function openConnections() {
+//    content_placeholder_toggler();
+//    $('#connections').show();
+//    $('#rhs_connections').addClass('selected');
+//}
+//function openPortfolio() {
+//    content_placeholder_toggler();
+//    $('#portfolio').show();
+//    $('#rhs_portfolio').addClass('selected');
+//}
+//function content_placeholder_toggler() {
+//    $('.content_replacer').each(function () {
+//        console.log($(this));
+//        console.log($(this).is(':visible'));
+//        if ($(this).is(':visible')) {
+//            $(this).hide().removeClass('selected');
+//            $('#rhs_' + $(this).attr('id')).removeClass('selected');
+//        }
+//    });
+//}
