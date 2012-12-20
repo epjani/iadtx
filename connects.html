@@ -494,15 +494,15 @@
                 <div id="rhs_profile_nav">
                     <ul class="unstyled">
                         <div class="rhs_divider_1"></div>
-                        <li id="rhs_portfolio" class="first"><a href="profile.html" title="Portfolio">Portfolio</a></li>
+                        <li id="rhs_portfolio" class="first rhs_menu_item"><a href="profile.html" title="Portfolio">Portfolio</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_contact"><a href="#" title="Contact">Contact</a></li>
+                        <li id="rhs_contact"  class="rhs_menu_item"><a href="#" title="Contact" onclick="openModal('contact_modal')">Contact</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_resume"><a href="#" title="Resume">Resume</a></li>
+                        <li id="rhs_resume" class="rhs_menu_item"><a href="#" title="Resume" onclick="openModal('resume_modal')">Resume</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_favorites"><a href="favorites.html" title="Favorites">Favorites</a></li>
+                        <li id="rhs_favorites" class="rhs_menu_item"><a href="favorites.html" title="Favorites">Favorites</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_connections" class="selected"><a href="connects.html" title="Connections">Connections</a></li>
+                        <li id="rhs_connections" class="selected rhs_menu_item"><a href="connects.html" title="Connections">Connections</a></li>
                         <div class="rhs_divider_2"></div>
                     </ul>
                 </div>
@@ -573,6 +573,52 @@
             <input id="modal_signin_submit" type="submit" value="Sign In" />
             <div id="not_a_member">Not a member? <a href="#" title="Sign Up!">Sign Up!</a></div>
         </form>
+    </div>
+
+    <div id="contact_modal" style="display:none;"> 
+        <div id="contact_modal_content" style="float:left;">
+            <div id="contact_person">Contact Justin</div>
+            <form id="contact_form">
+                <div style="height:35px;">
+                    <label>First Name*</label>
+                    <input type="text" name="first_name" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label>Last Name*</label>
+                    <input type="text" name="last_name" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label style="margin-left:15px;">Company</label>
+                    <input type="text" name="company" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label style="margin-left:36px;">Email*</label>
+                    <input type="text" name="email" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;width:500px;">
+                    <label style="margin-left:11px;">Message*</label>
+                    <textarea name="message" rows="10"></textarea>
+                </div>  
+                <div style="height:35px;">
+                    <input id="modal_contact_submit" type="submit" value="Contact" />
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <div id="resume_modal">
+        <div id="resume_image_container">
+            <img src="images/artist_resume.jpg" alt="Patrick Napoli resume" />
+        </div>
+        <div class="clearfix"></div>
+        <div id="download_documents_box">
+            <a id="download_word" title="Download word resume" ></a>
+            <a id="download_pdf" title="Download pdf resume" ></a>
+        </div>
     </div>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

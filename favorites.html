@@ -171,7 +171,7 @@
                 <div id="content_placeholder">
                     <div id="scrollable" class="horizontal-only scroll-pane hide-on-mobile">
                         <div id="portfolio" class="portfolio_items content_replacer">
-                            <div class="portfolio_item wide_item">
+                            <div class="favorite_item wide_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_1.jpg" alt="Graphic Design" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -186,7 +186,7 @@
                                 </div>
                             </div>
                         
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_2.jpg" alt="James Brown" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -201,7 +201,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_3.jpg" alt="Blue Dragon" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -217,7 +217,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item wide_item">
+                            <div class="favorite_item wide_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_4.jpg" alt="Aluna George" />
                                 <div class="clearfix"></div>
                                 <div class="pi_footer">
@@ -233,7 +233,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_2.jpg" alt="James Brown" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -248,7 +248,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_3.jpg" alt="Blue Dragon" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -264,7 +264,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item wide_item">
+                            <div class="favorite_item wide_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_1.jpg" alt="Graphic Design" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -279,7 +279,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_3.jpg" alt="Blue Dragon" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -295,7 +295,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_2.jpg" alt="James Brown" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -310,7 +310,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item wide_item">
+                            <div class="favorite_item wide_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_4.jpg" alt="Aluna George" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
 
-                            <div class="portfolio_item wide_item">
+                            <div class="favorite_item wide_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_1.jpg" alt="Graphic Design" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -339,7 +339,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="portfolio_item narrow_item">
+                            <div class="favorite_item narrow_item clickable_element" onclick="openModal('portfolio_modal');">
                                 <img class="portfolio_item_img" src="images/portfolio_example_3.jpg" alt="Blue Dragon" />
                                 <div class="pi_footer">
                                     <div class="pi_label">
@@ -374,15 +374,15 @@
                 <div id="rhs_profile_nav">
                     <ul class="unstyled">
                         <div class="rhs_divider_1"></div>
-                        <li id="rhs_portfolio" class="first"><a href="profile.html" title="Portfolio">Portfolio</a></li>
+                        <li id="rhs_portfolio" class="first rhs_menu_item"><a href="profile.html" title="Portfolio">Portfolio</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_contact"><a href="#" title="Contact">Contact</a></li>
+                        <li id="rhs_contact" class="rhs_menu_item"><a href="#" title="Contact" onclick="openModal('contact_modal')">Contact</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_resume"><a href="#" title="Resume">Resume</a></li>
+                        <li id="rhs_resume" class="rhs_menu_item"><a href="#" title="Resume" onclick="openModal('resume_modal');">Resume</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_favorites" class="selected"><a href="favorites.html" title="Favorites">Favorites</a></li>
+                        <li id="rhs_favorites" class="selected rhs_menu_item"><a href="favorites.html" title="Favorites">Favorites</a></li>
                         <div class="rhs_divider_2"></div>
-                        <li id="rhs_connections"><a href="connects.html" title="Connections">Connections</a></li>
+                        <li id="rhs_connections" class="rhs_menu_item"><a href="connects.html" title="Connections">Connections</a></li>
                         <div class="rhs_divider_2"></div>
                     </ul>
                 </div>
@@ -453,6 +453,72 @@
             <input id="modal_signin_submit" type="submit" value="Sign In" />
             <div id="not_a_member">Not a member? <a href="#" title="Sign Up!">Sign Up!</a></div>
         </form>
+    </div>
+
+    <div id="contact_modal" style="display:none;"> 
+        <div id="contact_modal_content" style="float:left;">
+            <div id="contact_person">Contact Justin</div>
+            <form id="contact_form">
+                <div style="height:35px;">
+                    <label>First Name*</label>
+                    <input type="text" name="first_name" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label>Last Name*</label>
+                    <input type="text" name="last_name" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label style="margin-left:15px;">Company</label>
+                    <input type="text" name="company" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;">
+                    <label style="margin-left:36px;">Email*</label>
+                    <input type="text" name="email" />
+                </div>
+                <div class="clearfix"></div>
+                <div style="height:35px;width:500px;">
+                    <label style="margin-left:11px;">Message*</label>
+                    <textarea name="message" rows="10"></textarea>
+                </div>  
+                <div style="height:35px;">
+                    <input id="modal_contact_submit" type="submit" value="Contact" />
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <div id="portfolio_modal" style="display:none;padding-top:5px;">
+        <div class="favorite_artist_modal" >
+            <img src="images/avatar_small.jpg" alt="Kyle Durham" style="float:left;"/>
+            <div class="favorite_artist_name_modal">Kyle Durham</div>
+            <div class="time_ago_modal">7d</div>
+            <img src="images/time_ico.png" alt="Time ago" style="float:right;margin-top:22px;margin-right:7px;"/>
+        </div>
+        <div id="image_container"></div>
+        <div class="portfolio_modal_footer">
+            <div class="pm_label">
+            </div>
+            <div class="pm_links">  
+                <a href="#" title="Tweet about this"><img src="images/twitter_ico_small.png" alt="Twitter" /></a>
+                <a href="#" title="Share on Facebook"><img src="images/facebook_ico_small.png" alt="Facebook" /></a>
+                <a href="#" title="Make this your favorite"><img src="images/favorite_ico_selected.png" alt="Favorite" /></a>
+                <a href="#" title="Number of views" class="pm_count">5k</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume_modal">
+        <div id="resume_image_container">
+            <img src="images/artist_resume.jpg" alt="Patrick Napoli resume" />
+        </div>
+        <div class="clearfix"></div>
+        <div id="download_documents_box">
+            <a id="download_word" title="Download word resume" ></a>
+            <a id="download_pdf" title="Download pdf resume" ></a>
+        </div>
     </div>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,5 +1,5 @@
 $(function () {
-    $('#scrollable').each(
+        $('#scrollable, #resume_image_container').each(
         function () {
             $(this).jScrollPane(
                 {
@@ -29,17 +29,16 @@ $(function () {
                         api.reinitialise();
                     }
                     $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
-                    if ($(window).width < 481)
-                    {
+                    if ($(window).width < 481) {
                         api.destroy();
                     }
                 }
             );
-            
+
         }
     )
-    $('#scrollable').jScrollPane();
-    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
+    $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
+    $('#scrollable, .jspContainer,.jspPane, .profiles, #resume_image_container').unbind('mousewheel');
 });
 
 $(document).mouseup(function (e) {
@@ -62,6 +61,9 @@ function hide_advanded_filter() {
     $('#advanced_filter').removeClass('selected');
 }
 
+var __clicked_element;
+$('.clickable_element').mouseup(function () { __clicked_element = $(this); });
+
 function openModal(modal_id) {
     // TODO : check why escClose doesn't work. If there's no solution implement our own by binding keyup event
     switch (modal_id) {
@@ -83,6 +85,54 @@ function openModal(modal_id) {
                     },
                     escClose: true
                 });
+            }
+        case 'contact_modal':
+            {
+                var last_item_id = '';
+                var element_origin_name = modal_id.split('_')[0];
+                $('.rhs_menu_item').each(function () {
+                    if ($(this).hasClass('selected')) {
+                        $(this).removeClass('selected');
+                        last_item_id = $(this).attr('id');
+                    }
+                });
+                $('#rhs_' + element_origin_name).addClass('selected');
+                $("#" + modal_id).bPopup({
+                    onClose: function () {
+                        $('#rhs_' + element_origin_name).removeClass('selected');
+                        $('#' + last_item_id).addClass('selected');
+                    }
+                });
+            }
+        case 'portfolio_modal':
+            {
+                //  find src of clicked element img and insert its _origin.jpg as a source for modal image
+                var img = __clicked_element.find('.portfolio_item_img').attr('src').split('/')[1].replace('portfolio_', '').replace('.jpg', '_origin.jpg');
+                var description = __clicked_element.find('.pi_label').html();
+
+                $('#image_container').html('<img id="modal_image_preview" src="images/' + img + '" />');
+
+                $('.pm_label').html(description);
+
+                $('#' + modal_id).bPopup();
+            }
+        case 'resume_modal':
+            {
+                var last_item_id = '';
+                var element_origin_name = modal_id.split('_')[0];
+                $('.rhs_menu_item').each(function () {
+                    if ($(this).hasClass('selected')) {
+                        $(this).removeClass('selected');
+                        last_item_id = $(this).attr('id');
+                    }
+                });
+                $('#rhs_' + element_origin_name).addClass('selected');
+                $('#' + modal_id).bPopup({
+                    onClose: function () {
+                        $('#rhs_' + element_origin_name).removeClass('selected');
+                        $('#' + last_item_id).addClass('selected');
+                    }
+                }).show();
             }
     }
 }
