@@ -81,3 +81,179 @@
 {
     color:#6a8722;
 }
+
+#contact_modal
+{
+    width:501px;
+    height:574px;
+    background: url('../images/contact_form_frame.png');
+    padding:23px;
+}
+#contact_modal_content
+{
+    padding:15px 25px 15px 15px;
+}
+
+#contact_person
+{
+    font-size:30px;
+    margin-bottom:23px;
+}
+
+#contact_form label
+{
+
+    font-size:16px;
+    color:#818285;
+    margin-top:5px;
+
+    float:left;
+}
+#contact_form input
+{
+    float:left;
+    width:233px;
+    margin-left:20px;
+    margin-bottom:15px;
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+}
+#contact_form textarea
+{
+    float:left;
+    margin-left:19px;
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    width:345px;
+    resize:none;
+    height:215px;
+}
+#contact_form input:focus, #contact_form textarea:focus
+{
+    border-color:none;
+    box-shadow:none;
+}
+
+#modal_contact_submit
+{
+    width:65px !important;
+    height:22px;
+    background-color:#818285;
+    text-align:center;
+    border:none;
+    color:#FFF;
+    float:right !important;
+    font-size:14px;
+    position:absolute;
+    bottom:37px;
+    right:47px;
+}
+
+#portfolio_modal
+{
+    padding:12px 12px 20px 12px;
+    background-color:#444444;
+}
+.portfolio_modal_footer
+{
+    margin-top:15px;
+    color:#a1a1a1;
+}
+.pm_label
+{
+    float:left;
+}
+
+.pm_links
+{
+    float:right;
+}
+.pm_links a
+{
+    float:left;
+    margin-left:5px;
+}
+a.pm_count
+{
+    display:block;
+    width:21px;
+    height:16px;
+    background:url('../images/count_ico.png') no-repeat;
+    color:#dcdbdb;
+    font-size:10px;
+    text-align:center;
+}
+.favorite_artist_modal
+{
+    margin-bottom:5px;
+    height:66px;
+}
+.favorite_artist_name_modal
+{
+    font-size:21px;
+    margin-left:12px;
+    margin-top:22px;
+    float:left;
+}
+
+.time_ago_modal
+{
+    float:right;
+    font-size:17px;
+    color:#8a8989;
+    margin-top:20px;
+    height:20px;
+}
+
+#resume_modal
+{
+    padding:5px 5px 10px 5px;
+    background-color:#444444;
+    width:440px;
+    display:none;
+}
+#resume_modal .jspContainer .jspHorizontalBar, #resume_modal .jspContainer .jspVerticalBar, #resume_modal .jspContainer .jspVerticalBar .jspTrack
+{
+    width:8px;
+    height: 552px;
+    margin-top:2px;
+    margin-right:2px;
+}
+
+#resume_modal .jspContainer .jspVerticalBar .jspTrack .jspDrag
+{
+    width:4px;
+    margin-left:2px;
+}
+#resume_image_container
+{
+    height:560px;
+    overflow:hidden;
+    width:440px;
+    background:#fff;
+}
+#download_documents_box
+{
+    width:440px;
+    padding:5px 0px 10px 0px;
+}
+#download_word
+{
+    width:42px;
+    height:38px;
+    float:right;
+    margin-right:10px;
+    background:url('../images/word_ico.png') no-repeat;
+    cursor:pointer;
+}
+#download_pdf
+{
+    width:31px;
+    height:38px;
+    float:right;
+    margin-right:10px;
+    background:url('../images/pdf_ico.png') no-repeat;
+    cursor:pointer;
+}

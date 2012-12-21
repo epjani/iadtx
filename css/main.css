@@ -99,7 +99,7 @@ form
     }
     #content_placeholder
     {
-        height:695px;
+        height:680px;
         border-bottom:2px solid #FFF;
         padding-left:25px;
     }
@@ -384,7 +384,7 @@ form
 {
     border-left:3px solid #FFF;
     border-top: 3px solid #FFF;
-    height:728px;
+    height:693px;
     padding:15px 0 18px 20px;
 }
 #no_avatar_rightpanel
@@ -436,7 +436,7 @@ form
 {
     border-left:3px solid #FFF;
     border-top: 3px solid #FFF;
-    height:708px;
+    height:693px;
     padding:15px 0 18px 20px;
 }
 #no_avatar_rightpanel
@@ -463,7 +463,7 @@ form
 
 #RHS_artists_you_may_know
 {
-    margin-top:35px;
+    margin-top:20px;
     text-align:left;
     color:#FFF;
     font-size:15px;
@@ -511,8 +511,8 @@ form
 	max-height: 680px;
 }
 .profiles {
-    width:1700px;
-    height:680px;
+    width:2200px;
+    height:665px;
     overflow:hidden;        
 }
 .profile-box {
@@ -553,7 +553,6 @@ form
     padding:9px;
     border:3px solid #2b2b2b;
     margin-right:8px;
-    margin-top:3px;
     margin-bottom:3px;
 }
 .profile-box2:hover {
@@ -601,12 +600,12 @@ form
 .portfolio_items
 {
     width:2700px;
-    height:665px;
+    height:650px;
     overflow:hidden;
     padding-top:15px;
 }
 
-.portfolio_item
+.portfolio_item, .favorite_item
 {
     height:283px;
     float:left;
@@ -625,7 +624,7 @@ form
 {
     width:197px;   
 }
-.portfolio_item:hover
+.portfolio_item:hover, .favorite_item:hover
 {
     cursor:pointer;
     border:3px solid #6B6D2B;
@@ -646,7 +645,7 @@ form
 {
     width:96px;
 }
-.portfolio_item .pi_footer
+.favorite_item .pi_footer, .portfolio_item .pi_footer
 {
     height:24px;
     bottom:8px;
@@ -657,12 +656,12 @@ form
     left:8px;   
 }
 
-.portfolio_item .pi_label
+.favorite_item .pi_label, .portfolio_item .pi_label
 {
     float:left;
 }
 
-.portfolio_item .pi_links
+.favorite_item .pi_links, .portfolio_item .pi_links
 {
     width:95px;
     float:right;
@@ -689,7 +688,7 @@ a.pi_count
 /******** RHS Profile *******/
 #rhs_profile_menu
 {
-    height:520px;
+    height:517px;
     width:236px;
     background-color:#444444;
 }
@@ -732,4 +731,79 @@ a.pi_count
     position:absolute;
     bottom:0px;
     right:5px;
+}
+
+#rhs_profile_nav
+{
+    background-color:#3c3b3b;
+    height:218px;
+    margin-top:8px;
+}
+
+#rhs_profile_nav li
+{
+    height:40px;
+    width:236px;
+    
+}
+#rhs_profile_nav li.selected
+{
+    background:url('../images/rhs_nav_selected.png') no-repeat;
+}
+#rhs_profile_nav li a
+{
+    padding:10px 0px 10px 36px;
+    display:block;
+}
+#rhs_profile_nav li a:hover
+{
+    color:#6A8722;
+}
+.rhs_divider_1
+{
+    height:3px;
+    width:237px;
+    background:url('../images/rhs_divide_1.png') no-repeat;
+}
+.rhs_divider_2
+{
+    height:3px;
+    width:237px;
+    background:url('../images/rhs_divide_2.png') no-repeat;
+}
+
+#rhs_about_artist
+{
+    font-size:12px;
+    margin-top:15px;
+}
+
+#rhs_artists_you_may_know_profile
+{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 40px;
+    text-align: left;
+    width: 240px;
+}
+
+#rhs_artists_you_may_know_profile ul
+{
+    margin-top:6px;
+}
+#rhs_artists_you_may_know_profile ul li
+{
+    margin-right:5px;
+    margin-bottom:5px;
+    float:left;
+}
+#rhs_view_all_artists
+{
+    float:left;
+    margin-top:-3px;
+    font-size:12px;
+}
+#rhs_view_all_artists a
+{
+    color:#a1a1a1 !important;   
 }
