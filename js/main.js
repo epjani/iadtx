@@ -101,6 +101,7 @@ function openModal(modal_id) {
                     onClose: function () {
                         $('#rhs_' + element_origin_name).removeClass('selected');
                         $('#' + last_item_id).addClass('selected');
+                        console.log('last item id : ' + last_item_id);
                     }
                 });
             }
