@@ -250,13 +250,12 @@ form
 } 
 #advanced_filter
 {
-    width:122px;
+    width:128px;
     height:28px;
-    padding-left:6px;
+    text-align:center;
     display:block;
-    padding-top:10px;
+    padding-top:11px;
     float:left;
-    font-size:12px;
 }
 #advanced_filter.selected
 {
@@ -272,7 +271,6 @@ form
     padding-top:11px;
     margin-left:10px;
     width:359px;
-    font-size:12px;
 }
 #search_by_tags_frm
 {
@@ -349,21 +347,17 @@ form
     
 #advanced_filter_search_btn
 {
-    width:78px;
-    height:32px;
+    width:90px;
+    height:38px;
     text-align:center;
     border:1px solid #FFF;
     position:relative;
     top:27px;
     float:right;
-    font-size:13px;
+    font-size:15px;
     font-family:Helvetica;
     background-color:#242223;
     color:#FFFFFF;
-}
-#advanced_filter_search_btn:hover
-{
-    color:#6a8722 !important;
 }
 #advanced_search_submenu
 {

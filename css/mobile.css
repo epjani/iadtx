@@ -1,388 +1,455 @@
-@media (max-width: 640px)
-{
+@media (max-width: 640px) {
     /****************************PAGE LAYOUT***********************************/
     body {
-        background-color:#242223;
+        background-color: #242223;
         width: 480px;
-        overflow:scroll;
+        overflow: scroll;
     }
-    #iadtx_page_container
-    {
+
+    #iadtx_page_container {
         float: left;
         width: 480px;
-        overflow:hidden;
+        overflow: hidden;
     }
+
     #padding-wrapper {
-        padding:30px 0px 0px 0px;
+        padding: 30px 0px 0px 0px;
     }
-    #content_container
-    {
+
+    #content_container {
         margin-right: 0;
     }
-    #header_container
-    {
-        padding-top:10px;
-        padding-left:0px;
-        min-height:115px;
-        background-color:#2b2b2b;
+
+    #header_container {
+        padding-top: 10px;
+        padding-left: 0px;
+        min-height: 115px;
+        background-color: #2b2b2b;
     }
-    #content_placeholder
-    {
-        height:auto;
-        border:none;
-        padding-left:0px;
-        background-color:#2c2b2b;
+
+    #content_placeholder {
+        height: auto;
+        border: none;
+        padding-left: 0px;
+        background-color: #2c2b2b;
     }
-    #right_panel_container
-    {
+
+    #right_panel_container {
         float: left;
         width: 280px;
         margin-left: -280px;
-        margin-top:26px;
-        display:none;
+        margin-top: 26px;
+        display: none;
     }
     /****************************HEADER AND MENUS***********************************/
-    #iadtx_header_logo
-    {
-        float:left;
-        max-width:280px;
-        margin-left:5px;
+    #iadtx_header_logo {
+        float: left;
+        max-width: 280px;
+        margin-left: 5px;
     }
-    #page_navigation
-    {
-        float:right;
-        margin-top:0px;
-        min-width:320px;
-        background-color:#242223;
-        padding:5px 5px;
-        padding-bottom:12px;
-    }
-    #main_page_navigation li
-    {   
-        height:30px;
-        float:left;
-        text-align:center;
-        font-size:17px;
-        padding-top:16px;
-        width:150px;
-    }
-    #main_page_navigation li.selected
-    {
-        width:169px;
-        background: url("../images/mobile-active.png") no-repeat;
 
+    #page_navigation {
+        float: right;
+        margin-top: 0px;
+        min-width: 320px;
+        background-color: #242223;
+        padding: 5px 5px;
+        padding-bottom: 12px;
     }
-    #main_page_navigation li a:hover
-    {
-        color:#6a8722!important;
+
+    #main_page_navigation li {
+        height: 30px;
+        float: left;
+        text-align: center;
+        font-size: 17px;
+        padding-top: 16px;
+        width: 150px;
     }
-    #search_box
-    {
-        float:right;
-        margin-top:0px;
-        margin-left:0px;
+
+        #main_page_navigation li.selected {
+            width: 169px;
+            background: url("../images/mobile-active.png") no-repeat;
+        }
+
+        #main_page_navigation li a:hover {
+            color: #6a8722!important;
+        }
+
+    #search_box {
+        float: right;
+        margin-top: 0px;
+        margin-left: 0px;
         max-width: 192px;
         margin-right: 4px;
     }
-    #search_box span {
-        float:right;
-        font-size:11px;
-        padding-bottom:3px;
-        padding-right:6px;
-    }
-    #iadtx_global_search
-    {
-        width:142px;
-        height:21px;
-        background:url('../images/search_frame.png') no-repeat;
-        border:none;
-        font-size:12px;
-        padding-left:13px;
+
+        #search_box span {
+            float: right;
+            font-size: 11px;
+            padding-bottom: 3px;
+            padding-right: 6px;
+        }
+
+    #iadtx_global_search {
+        width: 142px;
+        height: 21px;
+        background: url('../images/search_frame.png') no-repeat;
+        border: none;
+        font-size: 12px;
+        padding-left: 13px;
         right: 0px;
         margin-right: 0px;
         margin-left: 32px;
     }
-    #iadtx_global_search:focus
-    {
-        border:none;
-        box-shadow:none;
-    }
-    /* TODO make palceholder for IE8 - */
-    #iadtx_global_search::-webkit-input-placeholder
-    {
-        color:#b2b1b1;
-        font-size:9px;
-    }
-    #iadtx_global_search:-moz-placeholder  
-    {
-        color:#b2b1b1;
-        font-size:9px;
-    }
-    #iadtx_search_submit
-    {
-        margin-top:-3px;
-        margin-left:-30px;
-        background:url('../images/mobilesearchbtn.png') no-repeat;
-        width:26px;
-        height:24px;
-        border:none;
+
+        #iadtx_global_search:focus {
+            border: none;
+            box-shadow: none;
+        }
+        /* TODO make palceholder for IE8 - */
+        #iadtx_global_search::-webkit-input-placeholder {
+            color: #b2b1b1;
+            font-size: 9px;
+        }
+
+        #iadtx_global_search:-moz-placeholder {
+            color: #b2b1b1;
+            font-size: 9px;
+        }
+
+    #iadtx_search_submit {
+        margin-top: -3px;
+        margin-left: -30px;
+        background: url('../images/mobilesearchbtn.png') no-repeat;
+        width: 26px;
+        height: 24px;
+        border: none;
         display: inline;
         float: right;
         margin-top: -32px;
         z-index: 2;
         position: relative;
-        
     }
-    #advanced_search
-    {
-        background-color:#242223;
-        height:38px;
-        margin-top:15px;
-        font-family:Helvetica;
-        font-size:13px;
-        position:relative;
-        width:100%;
+
+    #advanced_search {
+        background-color: #242223;
+        height: 38px;
+        margin-top: 15px;
+        font-family: Helvetica;
+        font-size: 13px;
+        position: relative;
+        width: 100%;
         z-index: 100;
-        display:none;
+        display: none;
     }
     /****************************RHS PROFILE PANEL***********************************/
     /****************************LHS MAIN CONTENT PLACEHOLDER***********************************/
     /* Styles specific to this particular page */
-	.scroll-pane
-	{
-		width: 100%;
-		height: 680px;
-		overflow: auto;
-        display:none;
-	}
+    .scroll-pane {
+        width: 100%;
+        height: 680px;
+        overflow: auto;
+        display: none;
+    }
+
     .mobile-placeholder {
-        display:block;
+        display: block;
     }
     /*********************CONNECTIONS - PROFILES****************/
     .mobile-profile-info {
-        padding:0px 5px;
+        padding: 0px 5px;
     }
-    .mobile-profile-info .name {
-        font-size:35px;
-        color:#688522;
-        line-height: 15px;
-        padding:10px 4px;
-        padding-left:0px;
-        float:left;
-    }
-    .mobile-profile-info .followers {
-        font-size:12px;
-        color:#888888;
-        line-height: 15px;
-        padding:10px 10px;
-        float:left;
-    }
-    .mobile-profile-info .mpr-img {
-        float:right;
-        margin-right:0px;
-    }
+
+        .mobile-profile-info .name {
+            font-size: 35px;
+            color: #688522;
+            line-height: 15px;
+            padding: 10px 4px;
+            padding-left: 0px;
+            float: left;
+        }
+
+        .mobile-profile-info .followers {
+            font-size: 12px;
+            color: #888888;
+            line-height: 15px;
+            padding: 10px 10px;
+            float: left;
+        }
+
+        .mobile-profile-info .mpr-img {
+            float: right;
+            margin-right: 0px;
+        }
+
     .mobile-menu {
-        margin-top:7px;
+        margin-top: 7px;
     }
+
     .mobile-menu-item {
-        height:55px;
+        height: 55px;
         background: url(../images/mobile-menu-bg.png) repeat-x;
     }
-    .mobile-menu-item.active {
-        background: url(../images/m-activemenubg.png) repeat-x;
-        height:55px;
-    }
-    .mobile-menu-item .mtitle{
-        font-size:22px;
-        color:#fff;
-        padding:14px 5px;
-        padding-left:5px;
-        padding-right:20px;
-        background: url(../images/m-menu-arrow.png) no-repeat right center;
-        float:left;
-    }
-    .mobile-menu-item.active .mtitle {
-        background: url(../images/m-menu-arrow-active.png) no-repeat right center;
-    }
-    .mobile-menu-item .mtitle a:hover{
-        color:#6a8722
-    }
-    .mobile-menu-item .item-links {
-        float:right;
-        text-align:right;
-        padding-top:19px;
-        padding-right:10px;
-        font-size:12px;
-        color:#777;
-    }
-    .mobile-menu-item .item-links a {
-        color:#777;
-    }
-    .mobile-menu-item .item-links a:hover {
-        color:#fff;
-    }
+
+        .mobile-menu-item.active {
+            background: url(../images/m-activemenubg.png) repeat-x;
+            height: 55px;
+        }
+
+        .mobile-menu-item .mtitle {
+            font-size: 22px;
+            color: #fff;
+            padding: 14px 5px;
+            padding-left: 5px;
+            padding-right: 20px;
+            background: url(../images/m-menu-arrow.png) no-repeat right center;
+            float: left;
+        }
+
+        .mobile-menu-item.active .mtitle {
+            background: url(../images/m-menu-arrow-active.png) no-repeat right center;
+        }
+
+        .mobile-menu-item .mtitle a:hover {
+            color: #6a8722;
+        }
+
+        .mobile-menu-item .item-links {
+            float: right;
+            text-align: right;
+            padding-top: 19px;
+            padding-right: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+
+            .mobile-menu-item .item-links a {
+                color: #777;
+            }
+
+                .mobile-menu-item .item-links a:hover {
+                    color: #fff;
+                }
+
     .mobile-menu-content-ph {
-        min-height:200px;
-        background-color:#5e5e5e;
-        border-top:1px solid #1e1e1e;
-        padding-left:2px;
+        min-height: 200px;
+        background-color: #5e5e5e;
+        border-top: 1px solid #1e1e1e;
+        padding-left: 2px;
     }
     /**PROFILE BOXES***/
     .profile-box2 {
-    width:218px;
-    float:left;
-    height:80px;
-    background-color:#444444;
-    padding:6px;
-    border:3px solid #5e5e5e;
-    margin-right:3px;
-    margin-top:5px;
-    margin-bottom:0px;
+        width: 218px;
+        float: left;
+        height: 80px;
+        background-color: #444444;
+        padding: 6px;
+        border: 3px solid #5e5e5e;
+        margin-right: 3px;
+        margin-top: 5px;
+        margin-bottom: 0px;
     }
-    .profile-box2:hover {
-        border:3px solid #5b6d2b;
-        cursor:pointer;
-    }
+
+        .profile-box2:hover {
+            border: 3px solid #5b6d2b;
+            cursor: pointer;
+        }
+
     .pr-name2 {
-        font-size:13px;
-        font-weight:bold;
-        padding-right:0px;
-        color:#fff;
+        font-size: 13px;
+        font-weight: bold;
+        padding-right: 0px;
+        color: #fff;
     }
+
     .pr-img-small {
-        float:left;
+        float: left;
     }
+
     .pr-info2 {
-        float:left;
-        font-size:12px;
-        margin-top:6px;
-        margin-left:8px;
-        color:#cbcbcb;
+        float: left;
+        font-size: 12px;
+        margin-top: 6px;
+        margin-left: 8px;
+        color: #cbcbcb;
     }
+
     .loadmore {
-        background-color:#818285;
-        color:#fff;
-        margin-top:10px;
-        margin-left:4px;
-        width:220px;
-        padding:10px 10px;
-        margin-bottom:10px;
-        font-size:14px;
-        cursor:pointer;
+        background-color: #818285;
+        color: #fff;
+        margin-top: 10px;
+        margin-left: 4px;
+        width: 220px;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        cursor: pointer;
     }
-    .loadmore span{
-        color:#333
-    }
+
+        .loadmore span {
+            color: #333;
+        }
     /*************************FAVORITES**********************************/
     .filter-panel {
-        padding:10px 0px 2px 3px;
+        padding: 10px 0px 2px 3px;
     }
-    .filters-list {
-        padding:5px;
-        padding-top:5px;
-    }
-    .favorites-mobile-box {
-        padding:4px;
-        padding-top:6px;
-    }
-    .filter-items {
-        padding:4px;
 
+    .filters-list {
+        padding: 5px;
+        padding-top: 5px;
     }
+
+    .favorites-mobile-box {
+        padding: 4px;
+        padding-top: 6px;
+    }
+
+    .filter-items {
+        padding: 4px;
+    }
+
     .mobile-favorites-slider-wrapper {
-        width:468px;
-        margin:0 auto;
-        border-top:1px solid #d1d1d1; 
-        margin-top:5px;
-        padding:10px 0px;
-        position:relative;
-        height:385px;
-        margin-bottom:10px;
+        width: 468px;
+        margin: 0 auto;
+        border-top: 1px solid #d1d1d1;
+        margin-top: 5px;
+        padding: 10px 0px;
+        position: relative;
+        height: 385px;
+        margin-bottom: 10px;
     }
-    .mobile-fav-slider
-	{
-		width: 100%;
-        width:950px;
-	    height: auto;
-	}
+
+    .mobile-fav-slider {
+        width: 100%;
+        width: 950px;
+        height: auto;
+    }
+
     .jspTrack {
-        background-color:#777!important;
+        background-color: #777!important;
     }
+
     .portfolio_item {
-        height:318px;
-        -webkit-box-shadow:0px 1px 6px 3px #333;
-        -moz-box-shadow:0px 1px 6px 3px #333;
-        box-shadow:0px 1px 6px 3px #333;
-        margin-left:10px;
-        padding: 6px
+        height: 318px;
+        -webkit-box-shadow: 0px 1px 6px 3px #333;
+        -moz-box-shadow: 0px 1px 6px 3px #333;
+        box-shadow: 0px 1px 6px 3px #333;
+        margin-left: 10px;
+        padding: 6px;
     }
+
     .pf-mobile-info {
-        font-size:14px;
-        padding:2px;
-        padding-bottom:5px;
+        font-size: 14px;
+        padding: 2px;
+        padding-bottom: 5px;
     }
+
     .pi_footer {
-        margin-top:5px;
+        margin-top: 5px;
     }
+
     .pi_label {
-        color:#fff;
+        color: #fff;
     }
     /******************CONTACT************/
     h2.contact-title {
-        font-weight:normal;
-        padding-bottom:0px;
-        margin-bottom:0px;
-        font-size:28px;
-        margin-top:0px;
-        padding-top:3px;
-        padding-left:3px;
+        font-weight: normal;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 28px;
+        margin-top: 0px;
+        padding-top: 3px;
+        padding-left: 3px;
     }
+
     .form-row {
-        padding-top:0px;
-        padding:0px 3px;
-        width:450px;
+        padding-top: 0px;
+        padding: 0px 3px;
+        width: 450px;
     }
+
     .fr-left {
-        width:205px; float:left;
+        width: 205px;
+        float: left;
     }
+
     .fr-right {
-        width:220px; float:left;
-        margin-left:25px;
+        width: 220px;
+        float: left;
+        margin-left: 25px;
     }
+
     .form-row label {
-        color:#fff;
-        font-size:16px;
-        display:block;
+        color: #fff;
+        font-size: 16px;
+        display: block;
     }
+
     .form-row input {
-        width:100%;
+        width: 100%;
     }
+
     .form-row textarea {
-        width:100%;
-        height:90px;
+        width: 100%;
+        height: 90px;
     }
+
     .mobile-send-btn {
-        background-color:#818285;
-        color:#fff;
-        margin-top:10px;
-        margin-left:4px;
-        width:220px;
-        padding:6px 30px;
-        margin-bottom:10px;
-        font-size:14px;
-        cursor:pointer;
-        border:none;
+        background-color: #818285;
+        color: #fff;
+        margin-top: 10px;
+        margin-left: 4px;
+        width: 220px;
+        padding: 6px 30px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
     }
     /******************PORTFOLIO************/
-    .mobile-favorites-slider-wrapper.portfolio .portfolio_item{
-        height:285px;
+    .mobile-favorites-slider-wrapper.portfolio .portfolio_item {
+        height: 285px;
     }
+
     .mobile-favorites-slider-wrapper.portfolio {
-        height:355px;
+        height: 355px;
     }
+
     .tagfilterdd {
-        width:99%;
-        margin-top:10px;
+        width: 99%;
+        margin-top: 10px;
+    }
+    .m-portforlio-full {
+        margin-top:15px;
+        display:none;
+    }
+    .mobile-share {
+        background: url(../images/sharebg.png) no-repeat;
+        height:76px;
+    }
+    .micons {
+        width:380px;
+        margin:0 auto;
+        padding-top:16px;
+    }
+    .micons a{
+        display:block;
+        float:right;
+        margin-right:35px;
+    }
+    /******************RESUME************/
+    .mobile-resume {
+        padding:5px 3px;
+    }
+    .mobile-downloads {
+        height:45px;
+        padding-top:10px;
+    }
+    .mobile-downloads a {
+        float:left!important;
+    }
+    .resume-text {
+        line-height: 40px;
     }
     /****************PROFILE*******************/
     .profile-img {
@@ -404,10 +471,12 @@
         font-size:23px;
         padding-bottom:0px;
         margin-bottom:0px;
+        line-height:26px;
     }
     .m-name p {
         color:#bbb;
         font-size:13px;
+        padding-bottom:0px;
     }
     .m-connect {
         float:right;
@@ -430,6 +499,8 @@
     .m-name.aboutme {
         float: left;
         width: 280px;
+        margin-top:0px;
+        padding-top:0px;
     }
     /*********************FOOTER******************/
     .footer {
