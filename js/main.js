@@ -37,7 +37,8 @@ $(function () {
 
         }
     )
-    $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
+        $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
+        $('.mobile-favorites-slider-wrapper').jScrollPane({ autoReinitialise: true });
     $('#scrollable, .jspContainer,.jspPane, .profiles, #resume_image_container').unbind('mousewheel');
 });
 

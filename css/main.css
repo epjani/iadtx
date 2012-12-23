@@ -39,6 +39,9 @@ form
 .mobile-header {
     display:none;
 }
+.mobile-placeholder {
+    display:none;
+}
 /****************************PAGE LAYOUT***********************************/
 #iadtx_page_container
 {
