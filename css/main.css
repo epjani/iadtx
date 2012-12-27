@@ -42,6 +42,7 @@ form
 .mobile-placeholder {
     display:none;
 }
+
 /****************************PAGE LAYOUT***********************************/
 #iadtx_page_container
 {
@@ -55,16 +56,19 @@ form
 {
     margin-right: 280px;
 }
+#content_container.profile_content
+{
+    border-right:3px solid #FFF !important;
+}
 #header_container
 {
-
     padding-top:30px;
     padding-left:25px;
     min-height:115px;
 }
 #content_placeholder
 {
-    height:715px;
+    height:680px;
     border-bottom:2px solid #FFF;
     padding-left:25px;
 }
@@ -75,55 +79,30 @@ form
     margin-left: -280px;
     margin-top:26px;
 }
+.right_panel_container_profile
+{
+    margin-top:0px !important;
+}
+.right_panel_content_profile
+{
+    border-top:none !important;
+    height:794px !important;
+}
 /****************************HEADER AND MENUS***********************************/
 #iadtx_header_logo
 {
     float:left;
     max-width:280px;
 }
-    /****************************PAGE LAYOUT***********************************/
-    #iadtx_page_container
-    {
-        float: left;
-        width: 100%;
-    }
-    #padding-wrapper {
-        padding:30px 0px 0px 25px;
-    }
-    #content_container
-    {
-        margin-right: 280px;
-    }
-    #header_container
-    {
-        padding-top:30px;
-        padding-left:25px;
-        min-height:115px;
-    }
-    #content_placeholder
-    {
-        height:680px;
-        border-bottom:2px solid #FFF;
-        padding-left:25px;
-    }
-    #right_panel_container
-    {
-        float: left;
-        width: 280px;
-        margin-left: -280px;
-        margin-top:26px;
-    }
-    /****************************HEADER AND MENUS***********************************/
-    #iadtx_header_logo
-    {
-        float:left;
-        max-width:280px;
-    }
 #page_navigation
 {
     float:left;
     margin-top:13px;
     min-width:324px;
+}
+#page_nav_wrapper
+{
+    float:left;
 }
 #main_page_navigation li
 {   
@@ -165,58 +144,6 @@ form
     box-shadow:none;
 }
 /* TODO make palceholder for IE8 - */
-/*#iadtx_global_search::-webkit-input-placeholder
-{
-    color:#b2b1b1;
-    font-size:9px;
-}
-#iadtx_global_search:-moz-placeholder  
-{
-    color:#b2b1b1;
-    font-size:9px;
-}
-#iadtx_search_submit
-{
-    margin-top:-10px;
-    margin-left:4px;
-    background:url('../images/search_ico.png') no-repeat;
-    width:26px;
-    height:24px;
-    border:none;
-}
-#advanced_search
-{
-    background-color:#242223;
-    height:auto;
-    margin-top:15px;
-    font-family:Helvetica;
-    font-size:13px;
-    position:relative;
-    width:100%;
-    z-index: 100;
-}
-#search_box
-{
-    float:left;
-    margin-top:14px;
-    margin-left:0px;
-    max-width:198px;
-}
-#iadtx_global_search
-{
-    width:142px;
-    height:21px;
-    background:url('../images/search_frame.png') no-repeat;
-    border:none;
-    font-size:12px;
-    padding-left:13px;
-}
-#iadtx_global_search:focus
-{
-    border:none;
-    box-shadow:none;
-}*/
-/* TODO make palceholder for IE8 - */
 #iadtx_global_search::-webkit-input-placeholder
 {
     color:#b2b1b1;
@@ -235,6 +162,11 @@ form
     width:26px;
     height:24px;
     border:none;
+}
+#iadtx_global_search.placeholder_css
+{
+    color:#b2b1b1;
+    font-size:9px;
 }
 #advanced_search
 {
@@ -272,6 +204,10 @@ form
     margin-left:10px;
     width:275px;
     font-size:12px;
+}
+#search_by_tags .search_label
+{
+    float:left;
 }
 #search_by_tags_frm
 {
@@ -386,7 +322,6 @@ form
 }
 #right_panel_content
 {
-
     border-top: 3px solid #FFF;
     height:693px;
     padding:15px 0 18px 20px;
@@ -411,6 +346,10 @@ form
     padding-top:4px;
     margin-left:7px;
     margin-top:20px;
+}
+.RHS_login_btn:hover
+{
+    color:#6A8722;
 }
 
 #RHS_artists_you_may_know
@@ -463,9 +402,9 @@ form
 	max-height: 680px;
 }
 .profiles {
-    width:2200px;
+    width:2500px;
     height:665px;
-    overflow:hidden;        
+    overflow:hidden;
 }
 .profile-box {
     height:300px;
@@ -545,7 +484,10 @@ form
     line-height:15px;
 }
 
-
+.footer_link:hover
+{
+    color:#6A8722;
+}
 /************************** Profile ******************************/
 
 /**************** Portfolio ************************/

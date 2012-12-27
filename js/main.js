@@ -1,5 +1,5 @@
 $(function () {
-        $('#scrollable, #resume_image_container').each(
+    $('#scrollable, #resume_image_container').each(
         function () {
             $(this).jScrollPane(
                 {
@@ -34,13 +34,56 @@ $(function () {
                     }
                 }
             );
-
         }
     )
-        $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
-        $('.mobile-favorites-slider-wrapper').jScrollPane({ autoReinitialise: true });
+
+    $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
+    $('.mobile-favorites-slider-wrapper').jScrollPane({ autoReinitialise: true });
     $('#scrollable, .jspContainer,.jspPane, .profiles, #resume_image_container').unbind('mousewheel');
+
+    $('#scrollable').each(function () {
+        var scrollPane = $(this).jScrollPane();
+        var api = scrollPane.data('jsp');
+        scrollPane.bind(
+            'mousewheel',
+            function (event, delta, deltaX, deltaY) {
+                var original_delta = event.originalEvent.wheelDelta;
+                api.scrollByX(original_delta * -1);
+                return false;
+            }
+        );
+    });
+
+    $('.placeholder').focus(function () {
+
+        var input = $(this);
+        var placeholder_value = input.attr('placeholder');
+        if (input.val() == placeholder_value) {
+            input.val('');
+            input.removeClass('placeholder_css');
+        }
+    }).blur(function () {
+        var input = $(this);
+        var placeholder_value = input.attr('placeholder');
+        if (input.val() == '' || input.val() == placeholder_value) {
+            input.addClass('placeholder_css');
+            input.val(placeholder_value);
+        }
+    }).blur();
 });
+
+function pwdFocus() {
+    $('#fakepassword').hide();
+    $('#password').show();
+    $('#password').focus();
+}
+
+function pwdBlur() {
+    if ($('#password').attr('value') == '') {
+        $('#password').hide();
+        $('#fakepassword').show();
+    }
+}
 
 $(document).mouseup(function (e) {
     var container = $("#advanced_filter_content");

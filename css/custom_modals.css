@@ -52,7 +52,10 @@
     padding:8px;
     margin-bottom:20px !important;
 }
-
+.modal_signin_txtbox .placeholder_css
+{
+    color:#b2b1b1;
+}
 #modal_signin_submit
 {
     width:65px;

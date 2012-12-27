@@ -25,27 +25,16 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="js/jquery.jscrollpane.min.js"></script>
     <script src="js/jquery.bpopup-0.7.0.min.js" type="text/javascript"></script>
-    <style>
-        #right_panel_container
-        {
-            margin-top:0px;
-        }
-        #right_panel_content
-        {
-            border-top:none;
-            height:794px;
-        }
-    </style>
 </head>
 <body>
     <div id="iadtx_page_container">
-        <div id="content_container" style="border-right:3px solid #FFF;">
+        <div id="content_container" class="profile_content">
                 <div id="header_container">
                     <div class="row-fluid">
                         <a id="iadtx_header_logo" href="#" title="IADTx network" >
                             <img src="images/iadtx_header_logo.png" alt="IADTx network" />
                         </a>
-                        <div style="float:left;">
+                        <div id="page_nav_wrapper">
                             <div id="page_navigation" class="span2 hide-on-mobile">
                                 <ul id="main_page_navigation" class="unstyled">
                                     <li >
@@ -61,7 +50,7 @@
                             </div>
                             <div id="search_box" class="hide-on-mobile">
                                 <form action="search.html" id="iadtx_search">
-                                    <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
+                                    <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input placeholder placeholder_css" />
                                     <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
                                 </form>
                             </div>
@@ -70,7 +59,7 @@
                             <div id="search_box" class="span4">
                                 <span><a href="#login">Login</a> / <a href="#register">Register</a></span>
                                 <form action="search.html" id="iadtx_search">
-                                    <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input" />
+                                    <input id="iadtx_global_search" name="iadtx_global_search" type="text" placeholder="search by user or area of study" class="iadtx_input placeholder_css placeholder_css" />
                                     <input id="iadtx_search_submit" type="submit" value="" class="iadtx_search_ico" />
                                 </form>
                             </div>
@@ -154,7 +143,7 @@
                             </form>
                         </div>
                         <div id="search_by_tags">
-                            <div style="float: left;">Search by tags:</div>
+                            <div class="search_label">Search by tags:</div>
                             <form>
                                 <input id="search_by_tags_frm" name="search_by_tags" type="text" />
                                 <input id="search_by_tags_submit" type="submit" value="" class="iadtx_search_ico" />
@@ -740,8 +729,8 @@
                 </div>
         </div>
     </div>
-    <div id="right_panel_container">
-        <div id="right_panel_content">
+    <div id="right_panel_container" class="right_panel_container_profile">
+        <div id="right_panel_content" class="right_panel_content_profile">
             <div id="rhs_profile_menu">
                 <img class="rhs_profile_picture" src="images/profile_picture_example.jpg" alt="Justin Lambert" />
                 <div id="profile_details_placeholder">
@@ -810,7 +799,7 @@
         <div class="footer-text">
             Copyright &copy; 2012 IADTX Magazine & The Career Education Corporation |  All Rights Reserved   <br />
             CEC and its schools cannot guarantee employment or salary. Find disclosures on graduation rates, student financial obligations and more at www.careered.com/disclosures.<br />
-            <a href="#privacy">Privacy Policy</a> | <a href="#legal">Legal Terms and Conditions</a> | <a href="#privacy">Student Disclosures</a> <br />
+            <a href="#privacy" class="footer_link">Privacy Policy</a> | <a href="#legal" class="footer_link">Legal Terms and Conditions</a> | <a href="#privacy" class="footer_link">Student Disclosures</a> <br />
         </div>
     </div>
 
@@ -829,8 +818,9 @@
         <div class="clearfix"></div>
         <div class="modal_signin_labels" >Sign In</div>
         <form id="modal_signin">
-            <input type="text" name="email" placeholder="Email Address" class="modal_signin_txtbox"/><br />
-            <input type="password" name="password" placeholder="Password" class="modal_signin_txtbox"/><br />
+            <input type="text" name="email" placeholder="Email Address" class="modal_signin_txtbox placeholder_css placeholder"/><br />
+            <input type="text" name="fakepassword" id="fakepassword" value="Password" onfocus="pwdFocus()" class="modal_signin_txtbox placeholder placeholder_css" />
+            <input type="password" name="password" id="password" class="modal_signin_txtbox placeholder placeholder_css" onblur="pwdBlur()" value="" style="display:none;"/><br />
             <input id="modal_signin_submit" type="submit" value="Sign In" />
             <div id="not_a_member">Not a member? <a href="#" title="Sign Up!">Sign Up!</a></div>
         </form>
