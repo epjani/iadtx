@@ -1,4 +1,23 @@
 $(function () {
+    $('.placeholder').focus(function () {
+
+        var input = $(this);
+        var placeholder_value = input.attr('placeholder');
+        if (input.val() == placeholder_value) {
+            input.val('');
+            input.removeClass('placeholder_css');
+        }
+    }).blur(function () {
+        var input = $(this);
+        var placeholder_value = input.attr('placeholder');
+        if (input.val() == '' || input.val() == placeholder_value) {
+            input.addClass('placeholder_css');
+            input.val(placeholder_value);
+        }
+    }).blur();
+});
+
+function initialise_scrollbar() {
     $('#scrollable, #resume_image_container').each(
         function () {
             $(this).jScrollPane(
@@ -37,7 +56,7 @@ $(function () {
         }
     )
 
-    $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true });
+    $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true }).data('jsp');
     $('.mobile-favorites-slider-wrapper').jScrollPane({ autoReinitialise: true });
     $('#scrollable, .jspContainer,.jspPane, .profiles, #resume_image_container').unbind('mousewheel');
 
@@ -53,25 +72,7 @@ $(function () {
             }
         );
     });
-
-    $('.placeholder').focus(function () {
-
-        var input = $(this);
-        var placeholder_value = input.attr('placeholder');
-        if (input.val() == placeholder_value) {
-            input.val('');
-            input.removeClass('placeholder_css');
-        }
-    }).blur(function () {
-        var input = $(this);
-        var placeholder_value = input.attr('placeholder');
-        if (input.val() == '' || input.val() == placeholder_value) {
-            input.addClass('placeholder_css');
-            input.val(placeholder_value);
-        }
-    }).blur();
-});
-
+}
 function pwdFocus() {
     $('#fakepassword').hide();
     $('#password').show();
@@ -100,6 +101,7 @@ function toggle_advanced_filter() {
         $('#advanced_filter').addClass('selected');
     }
 }
+
 function hide_advanded_filter() {
     $('#advanced_filter_content').hide();
     $('#advanced_filter').removeClass('selected');
@@ -200,5 +202,56 @@ $(document).ready(function () {
     $('.mob-fav-profiles .portfolio_item.narrow_item').click(function () {
         $('.mobile-menu').hide();
         $('.m-portforlio-full').fadeIn();
-    })
+    })
 });
+
+function calculate_content_placeholder_width(context) {
+    switch (context) {
+        case 'index':
+            {
+                var $item = $($('.profile-box')[0]);
+                var item_width = $item.outerWidth();
+                var items_count = $('.profile-box').length;
+                var additional_width = 0;
+                var margin = 4;
+                if (items_count % 2 != 0) {
+                    additional_width = item_width;
+                }
+                
+                var items_width = (item_width + margin) / 2 * items_count + additional_width;
+                $('.profiles').css('width', items_width);                
+                break;
+            }
+        case 'profile':
+        case 'favorites':
+            {
+                var $items = $('#portfolio .portfolio_item, #portfolio .favorite_item');
+                var items_width = 0;
+                var max_item_width = 420;
+                $items.each(function () {
+                    console.log($(this).width());
+                    items_width += $(this).outerWidth() + 4;
+                });
+                items_width = items_width / 2 + max_item_width;
+
+                $('#portfolio').css('width', items_width);
+                break;
+            }
+        case 'connections':
+            {
+                var $item = $($('#connections .profile-box2')[0]);
+                var item_width = $item.outerWidth();
+                var items_count = $('#connections .profile-box2').length;
+                var additional_width = 0;
+                var margin = 4;
+                if (items_count % 2 != 0) {
+                    additional_width = item_width;
+                }
+
+                var items_width = (item_width + margin) / 6 * items_count + additional_width;
+                $('.profiles').css('width', items_width);
+                break;
+            }
+    }
+    initialise_scrollbar();
+}
