@@ -5,7 +5,9 @@
         width: 480px;
         overflow: scroll;
     }
-
+    #content_container.profile_content {
+    border:none!important;
+    }
     #iadtx_page_container {
         float: left;
         width: 480px;
@@ -238,6 +240,9 @@
         padding-left: 2px;
     }
     /**PROFILE BOXES***/
+    .mob-fav-profiles {
+        padding-top:12px;
+    }
     .profile-box2 {
         width: 218px;
         float: left;

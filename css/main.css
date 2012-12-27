@@ -563,7 +563,7 @@ form
 
 .favorite_item .pi_links, .portfolio_item .pi_links
 {
-    width:95px;
+    width:101px;
     float:right;
     margin-top:4px;
 }
@@ -576,12 +576,30 @@ form
 a.pi_count
 {
     display:block;
-    width:21px;
     height:16px;
-    background:url('../images/count_ico.png') no-repeat;
     color:#dcdbdb;
     font-size:10px;
     text-align:center;
+}
+a.pi_count .left-c{
+    height:16px;
+    width:9px;
+    background: url(../images/count_ico-left.png) no-repeat;
+    display:inline-block;
+    float:left;
+}
+a.pi_count .middle-c{
+    background: url(../images/count_ico-m.png) repeat-x;
+    height:16px;
+    display:inline-block;
+    float:left;
+}
+a.pi_count .right-c{
+    height:16px;
+    width:9px;
+    background: url(../images/count_ico-right.png) no-repeat;
+    display:inline-block;
+    float:left;
 }
 
 
