@@ -100,7 +100,7 @@ function showPortfolio() {
     $('.portfolioScrollPH').fadeIn('fast');
     $('.rhs_menu_item').removeClass('selected');
     $('#rhs_portfolio').addClass('selected');
-    initialise_scrollbar();
+    calculate_content_placeholder_width('portfolio');
 }
 function showFavorites() {
     $('.portfolioScrollPH').hide();
@@ -108,7 +108,7 @@ function showFavorites() {
     $('.favoritesScrollPH').fadeIn('fast');
     $('.rhs_menu_item').removeClass('selected');
     $('#rhs_favorites').addClass('selected');
-    initialise_scrollbar();
+    calculate_content_placeholder_width('favorites');
 }
 function showConnections() {
     $('.portfolioScrollPH').hide();
@@ -116,7 +116,7 @@ function showConnections() {
     $('.connectionsScrollPH').fadeIn('fast');
     $('.rhs_menu_item').removeClass('selected');
     $('#rhs_connections').addClass('selected');
-    initialise_scrollbar();
+    calculate_content_placeholder_width('connections');
 }
 
 function pwdFocus() {
@@ -247,9 +247,8 @@ function calculate_content_placeholder_width(context) {
                 break;
             }
         case 'profile':
-        case 'favorites':
             {
-                var $items = $('#portfolio .portfolio_item, #portfolio .favorite_item');
+                var $items = $('#portfolio .portfolio_item');
                 var items_width = 0;
                 var max_item_width = 420;
                 $items.each(function () {
@@ -259,6 +258,21 @@ function calculate_content_placeholder_width(context) {
                 items_width = items_width / 2 + max_item_width;
 
                 $('#portfolio').css('width', items_width);
+                break;
+            }
+        case 'favorites':
+            {
+                var $items = $('#favorites .favorite_item');
+
+                var items_width = 0;
+                var max_item_width = 420;
+                $items.each(function () {
+                    console.log($(this).width());
+                    items_width += $(this).outerWidth() + 4;
+                });
+                items_width = items_width / 2 + max_item_width;
+
+                $('#favorites').css('width', items_width);
                 break;
             }
         case 'connections':
@@ -273,7 +287,7 @@ function calculate_content_placeholder_width(context) {
                 }
 
                 var items_width = (item_width + margin) / 6 * items_count + additional_width;
-                $('.profiles').css('width', items_width);
+                $('#connections').css('width', items_width);
                 break;
             }
     }
