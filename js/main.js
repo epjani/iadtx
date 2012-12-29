@@ -1,3 +1,4 @@
+var $hovered_element = null;
 $(function () {
     $('.placeholder').focus(function () {
 
@@ -15,6 +16,12 @@ $(function () {
             input.val(placeholder_value);
         }
     }).blur();
+
+    // added mousewheel listener, handled it in function wheel()
+    if (window.addEventListener)
+        window.addEventListener('DOMMouseScroll', wheel, false);
+    window.onmousewheel = document.onmousewheel = wheel;
+    $('*').hover(function () { $hovered_element = $(this); });
 });
 
 
@@ -59,20 +66,35 @@ function initialise_scrollbar() {
 
     $('#scrollable, #resume_image_container').jScrollPane({ autoReinitialise: true }).data('jsp');
     $('.mobile-favorites-slider-wrapper').jScrollPane({ autoReinitialise: true });
-    $('#scrollable, .jspContainer,.jspPane, .profiles, #resume_image_container').unbind('mousewheel');
+    $('#scrollable, .jspContainer,.jspPane, .profiles').unbind('mousewheel');
 
-    $('#scrollable').each(function () {
-        var scrollPane = $(this).jScrollPane();
-        var api = scrollPane.data('jsp');
-        scrollPane.bind(
-            'mousewheel',
-            function (event, delta, deltaX, deltaY) {
-                var original_delta = event.originalEvent.wheelDelta;
-                api.scrollByX(original_delta * -1);
-                return false;
-            }
-        );
-    });
+}
+
+function handle_wheel(delta, event) {
+    var api = $('#scrollable').jScrollPane().data('jsp');
+    if ($hovered_element.attr('id') == 'scrollable' || $hovered_element.parents('#scrollable').length > 0) {
+        var wheel_speed = -50;   //adjust wheel speed here
+        api.scrollByX(delta * wheel_speed);
+        if (event.preventDefault)
+            event.preventDefault();
+        event.returnValue = false;
+    } else {
+        event.returnValue = true;
+    }
+    
+}
+
+function wheel(event) {
+    var delta = 0;
+    if (!event) //IE
+        event = window.event;
+    if (event.wheelDelta) { // IE/Opera
+        delta = event.wheelDelta / 120;
+    } else if (event.detail) { // Mozilla
+        delta = -event.detail / 3;
+    }
+    if (delta)
+        handle_wheel(delta, event);
 }
 
     $('.placeholder').focus(function () {
@@ -157,7 +179,6 @@ var __clicked_element;
 $('.clickable_element').mouseup(function () { __clicked_element = $(this); });
 
 function openModal(modal_id) {
-    // TODO : check why escClose doesn't work. If there's no solution implement our own by binding keyup event
     switch (modal_id) {
         case 'signup_modal':
             {
@@ -200,6 +221,18 @@ function openModal(modal_id) {
             {
                 //  find src of clicked element img and insert its _origin.jpg as a source for modal image
                 var img = __clicked_element.find('.portfolio_item_img').attr('src').split('/')[1].replace('portfolio_', '').replace('.jpg', '_origin.jpg');
+                var description = __clicked_element.find('.pi_label').html();
+
+                $('#image_container').html('<img id="modal_image_preview" src="images/' + img + '" />');
+
+                $('.pm_label').html(description);
+
+                $('#' + modal_id).bPopup();
+            }
+        case 'favorites_modal':
+            {
+                //  find src of clicked element img and insert its _origin.jpg as a source for modal image
+                var img = __clicked_element.find('.favorites_item_img').attr('src').split('/')[1].replace('portfolio_', '').replace('.jpg', '_origin.jpg');
                 var description = __clicked_element.find('.pi_label').html();
 
                 $('#image_container').html('<img id="modal_image_preview" src="images/' + img + '" />');
@@ -252,7 +285,6 @@ function calculate_content_placeholder_width(context) {
                 var items_width = 0;
                 var max_item_width = 420;
                 $items.each(function () {
-                    console.log($(this).width());
                     items_width += $(this).outerWidth() + 4;
                 });
                 items_width = items_width / 2 + max_item_width;
@@ -267,7 +299,6 @@ function calculate_content_placeholder_width(context) {
                 var items_width = 0;
                 var max_item_width = 420;
                 $items.each(function () {
-                    console.log($(this).width());
                     items_width += $(this).outerWidth() + 4;
                 });
                 items_width = items_width / 2 + max_item_width;
